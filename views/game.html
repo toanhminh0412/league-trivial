@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Trivial</title>
+    <link rel="stylesheet" type="text/css" href="styles/game.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="timer"></div>
+        <div class="game-display">
+            <img id="question-img" src="" alt="champion-spells">
+            <p id="question"></p>
+            <div class="player-container"></div>
+            <input id="answer" type="text" placeholder="Type Answer Here">
+            <div class="start-btn">Start game</div>
+            <div class="lobby-btn">Lobby</div>
+        </div>
+        <div class="chat">
+            <div class="chat-box"></div>
+            <input id="chat-input" type="text" placeholder="Type here to chat">
+        </div>
+        <div class="chat-btn">Chat</div>
+    </div>
+</body>
+<script src="js/game.js"></script>
+</html>

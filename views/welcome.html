@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Trivial</title>
+    <link rel="stylesheet" type="text/css" href="styles/welcome.css">
+</head>
+<body>
+    <div class="game-container">
+        <form class="ingame-info" onsubmit="submitName()">
+            <input class="name-input" type='text' placeholder="Username">
+            <div onclick="submitName()" class="submit-btn">Submit</div>
+        </form>
+    </div>
+
+    <script>
+        const submitName = () => {
+            // e.preventDefault();
+            const name = document.querySelector('.name-input').value;
+            window.localStorage.setItem('leaguetrivial-name', name);
+            window.location.href = "/prep";
+        }
+        document.body.addEventListener("keyup", event => {
+            event.preventDefault();
+            // console.log(event.keyCode);
+            if (event.keyCode === 13) {
+                console.log("this is trigger");
+                submitName();
+            }
+        })
+    </script>
+</body>
+</html>

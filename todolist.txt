@@ -1,0 +1,2 @@
+1. only room owner has start game button
+2. create room object include room id, owner socket id, members' names

@@ -1,0 +1,76 @@
+{
+    "spellQuestions" : [
+        {
+            "id": 0,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AatroxQ.png",
+            "answer": "aatrox"
+        },
+        {
+            "id": 1,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AatroxW.png",
+            "answer": "aatrox"
+        },
+        {
+            "id": 2,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AatroxE.png",
+            "answer": "aatrox"
+        },
+        {
+            "id": 3,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AatroxR.png",
+            "answer": "aatrox"
+        }, 
+        {
+            "id": 4,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AhriFoxFire.png",
+            "answer": "ahri"
+        },
+        {
+            "id": 5,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AhriOrbofDeception.png",
+            "answer": "ahri"
+        },
+        {
+            "id": 6,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AhriSeduce.png",
+            "answer": "ahri"
+        },
+        {
+            "id": 7,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AhriTumble.png",
+            "answer": "ahri"
+        },
+        {
+            "id": 8,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AkaliQ.png",
+            "answer": "akali"
+        },
+        {
+            "id": 9,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AkaliW.png",
+            "answer": "akali"
+        },
+        {
+            "id": 10,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AkaliE.png",
+            "answer": "akali"
+        },
+        {
+            "id": 11,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AkaliR.png",
+            "answer": "akali"
+        }
+    ]
+}

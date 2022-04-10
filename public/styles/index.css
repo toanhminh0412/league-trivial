@@ -1,0 +1,92 @@
+/* Important screen sizes: 414, 600, 1000, 1400 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.players-container {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-container {
+    color: #fff;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #0054c2;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 150%;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+}
+
+.start-btn:hover {
+    box-shadow: inset 0 0 10px #000000;
+    background-color: #a60000;
+}
+
+.player-container:first-child {
+    color: #ebd700;
+}
+
+@media only screen and (min-width: 1000px) {
+    .players-container {
+        width: 75%;
+    }
+
+    .player-container {
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .players-container {
+        width: 50%;
+    }
+}
