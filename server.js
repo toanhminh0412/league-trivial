@@ -19,12 +19,12 @@ app.use(express.static('public'))
 
 // Lobby for players before joining the game
 app.get('/prep', (req, res) => {
-    res.sendFile(path.join(__dirname,'views/index.html'));
+    res.sendFile(path.join(__dirname,'views/lobby.html'));
 })
 
 // Page for players to add their username
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/welcome.html')); 
+    res.sendFile(path.join(__dirname, 'views/index.html')); 
 })
 
 // Actual gameplay
