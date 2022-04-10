@@ -22,14 +22,14 @@ $(window).resize(function() {
 });
 
 // Connect to the game server
-const socket = io("http://localhost:5000");
+const socket = io();
 const ingameName = window.localStorage.getItem('leaguetrivial-name') 
 console.log("name: ", ingameName);
 socket.on("connection");
 
 // Send the name of the current player to the server
-socket.emit("new-player", ingameName);
-socket.on("players", players => {
+socket.emit("game-new-player", ingameName);
+socket.on("game-players", players => {
     // console.log("Player list: ", players);
     document.querySelector('.player-container').innerHTML = "";
 
@@ -81,7 +81,7 @@ socket.on("players", players => {
     }
 })
 
-socket.on('new-player', player => {
+socket.on('game-new-player', player => {
     // console.log('New player: ', player);
     // Construct new container for the new player
     let playerDiv = document.createElement("div");
@@ -111,7 +111,7 @@ $("#chat-input").on('keyup', function (e) {
         // Send a message to everyone when enter is hit
         const message = document.querySelector('#chat-input').value;
         if (message !== "") {
-            socket.emit("chat", {name: ingameName, msg: message});
+            socket.emit("game-chat", {name: ingameName, msg: message});
             document.querySelector('#chat-input').value = "";
             var chatBox = document.querySelector(".chat-box");
             chatBox.scrollTop = chatBox.scrollHeight;
@@ -120,7 +120,7 @@ $("#chat-input").on('keyup', function (e) {
 });
 
 // Receive messages from players
-socket.on("chat", msgObj => {
+socket.on("game-chat", msgObj => {
     let messageP = document.createElement("p");
     let messageText = document.createTextNode(`${msgObj.name}: ${msgObj.msg}`);
     messageP.appendChild(messageText);
@@ -142,11 +142,11 @@ const gameRun = async () => {
             answer = answer.replace(/\s/g, '').toLowerCase();
             if (answer !== "") {
                 if (answer !== curQuestionObj.answer) {
-                    socket.emit("wrong-answer", {name: ingameName, answer: answer});
+                    socket.emit("game-wrong-answer", {name: ingameName, answer: answer});
                     document.querySelector('#answer').value = "";
                 } else {
                     document.querySelector('#answer').disabled = true;
-                    socket.emit("right-answer", {name: ingameName, answer: answer, point: point});
+                    socket.emit("game-right-answer", {name: ingameName, answer: answer, point: point});
                     document.querySelector('#answer').value = "";
                 }
             }
@@ -154,7 +154,7 @@ const gameRun = async () => {
     });
 
     // Receive questions from server
-    socket.on("question", questionObj => {
+    socket.on("game-question", questionObj => {
         console.log(questionObj);
         curQuestionObj = questionObj;
         document.getElementById('question-img').src = questionObj.img;
@@ -162,7 +162,7 @@ const gameRun = async () => {
     })
 
     // Wrong answer from players
-    socket.on("wrong-answer", answerObj => {
+    socket.on("game-wrong-answer", answerObj => {
         let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
         let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
         if (yourPlayerName === answerObj.name) {
@@ -179,7 +179,7 @@ const gameRun = async () => {
     })
 
     // Right answer from players
-    socket.on("right-answer", answerObj => {
+    socket.on("game-right-answer", answerObj => {
         let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
         let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
         if (yourPlayerName === answerObj.name) {
@@ -250,7 +250,7 @@ const gameRun = async () => {
         const role = window.localStorage.getItem("role");
         if (role === "room-owner") {
             // get question from the server
-            socket.emit("get-question");
+            socket.emit("game-get-question");
         }
         
         await answerTimer(); 
@@ -284,7 +284,7 @@ const gameRun = async () => {
 }
 
 // Room owner starts a game 
-socket.on("game-start", () => {
+socket.on("game-game-start", () => {
     document.querySelector("#question-img").style.display = "block";
     document.querySelector("#question-img").style.marginLeft = "auto";
     document.querySelector("#question-img").style.marginRight = "auto";
@@ -296,7 +296,7 @@ socket.on("game-start", () => {
 // Start a game by clicking on start button
 if (window.localStorage.getItem("role") === "room-owner") {
     document.querySelector('.start-btn').addEventListener("click", () => {
-        socket.emit("game-start");
+        socket.emit("game-game-start");
     })
 }
 

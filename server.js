@@ -2,14 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const lobbyServer = require('http').createServer(app);
-const lobbyIO = require('socket.io')(lobbyServer, { cors: { origin: "*" }})
-const gameServer = require('http').createServer(app);
-const gameIO = require('socket.io')(gameServer, { cors: { origin: "*" }})
+const io = require('socket.io')(lobbyServer, { cors: { origin: "*" }})
 const spellQuestions = require('./questions/spells.json').spellQuestions;
 let socketIdName = {};
-let gameSocketIdName = {};
-const lobbyPORT = process.env.PORT || 3001;
-const gamePORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 // Player list for the lobby
 let lobbyPlayerList = [];
@@ -39,88 +35,75 @@ app.get('/spell-questions', (req, res) => {
     res.status(200).send(spellQuestions);
 })
 
-lobbyServer.listen(lobbyPORT, () => {
-    console.log('Lobby Server running...');
+lobbyServer.listen(PORT, () => {
+    console.log('Server running...');
 })
 
-gameServer.listen(gamePORT, () => {
-    console.log('Game Server running...');
-})
-
-lobbyIO.on("connection", (socket) => {
+io.on("connection", (socket) => {
 
     // Signal received when a new player joins
-    socket.on('new-player', (name) => {
+    socket.on('lobby-new-player', (name) => {
         if (!lobbyPlayerList.includes(name)) {
             lobbyPlayerList.push(name);
         }
         socketIdName[socket.id] = name;
         console.log(socketIdName);
-        lobbyIO.emit('players', lobbyPlayerList);
+        io.emit('lobby-players', lobbyPlayerList);
     })
 
     // Signal received when an owner of a lobby start a game
-    socket.on("game-start", () => {
-        console.log("game-start emmited :", Object.keys(gameSocketIdName).length)
-        if (Object.keys(gameSocketIdName).length === 0) {
-            lobbyIO.emit("game-start");
+    socket.on("lobby-game-start", () => {
+        if (gamePlayerList.length === 0) {
+            io.emit("lobby-game-start");
         }
     })
 
     socket.on("disconnect", () => {
         const name = socketIdName[socket.id];
         console.log(`Player ${name} just left the lobby`);
-        const index = lobbyPlayerList.indexOf(name);
-        lobbyPlayerList.splice(index, 1);
-        lobbyIO.emit("players", lobbyPlayerList);
+        if (lobbyPlayerList.includes(name)) {
+            const index = lobbyPlayerList.indexOf(name);
+            lobbyPlayerList.splice(index, 1);
+            io.emit("lobby-players", lobbyPlayerList);
+        } else {
+            const index = gamePlayerList.indexOf(name);
+            gamePlayerList.splice(index, 1);
+            io.emit("game-players", gamePlayerList);
+        }
         delete socketIdName[socket.id];
     })
 
-})
-
-gameIO.on("connection", socket => {
-    console.log('A player just joined the game');
-
-    socket.on("new-player", name => {
+    socket.on("game-new-player", name => {
         if (!gamePlayerList.includes(name)) {
             gamePlayerList.push(name);
         }
-        gameSocketIdName[socket.id] = name;
-        socket.emit("players", gamePlayerList);
-        socket.broadcast.emit('new-player', name);
+        socketIdName[socket.id] = name;
+        socket.emit("game-players", gamePlayerList);
+        socket.broadcast.emit('game-new-player', name);
     })
 
-    socket.on("game-start", () => {
-        gameIO.emit("game-start");
+    socket.on("game-game-start", () => {
+        io.emit("game-game-start");
     })
 
-    socket.on("chat", msgObj => {
+    socket.on("game-chat", msgObj => {
         // console.log(`${msgObj.name}: ${msgObj.msg}`);
-        gameIO.emit("chat", msgObj);
+        io.emit("game-chat", msgObj);
     })
 
-    socket.on("get-question", () => {
+    socket.on("game-get-question", () => {
         const questionIndex = Math.floor(Math.random() * (spellQuestions.length - 1));
         const questionObj = spellQuestions[questionIndex];
-        gameIO.emit("question", questionObj);
+        io.emit("game-question", questionObj);
     })
 
-    socket.on("wrong-answer", answerObj => {
-        gameIO.emit("wrong-answer", answerObj);
+    socket.on("game-wrong-answer", answerObj => {
+        io.emit("game-wrong-answer", answerObj);
     })
 
-    socket.on("right-answer", answerObj => {
+    socket.on("game-right-answer", answerObj => {
         console.log(answerObj);
-        gameIO.emit("right-answer", answerObj);
-    })
-
-    socket.on("disconnect", () => {
-        const name = gameSocketIdName[socket.id];
-        console.log(`Player ${name} just left the game`);
-        const index = gamePlayerList.indexOf(name);
-        gamePlayerList.splice(index, 1);
-        gameIO.emit("players", gamePlayerList);
-        delete gameSocketIdName[socket.id];
+        io.emit("game-right-answer", answerObj);
     })
 
 })

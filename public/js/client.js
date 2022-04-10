@@ -1,10 +1,10 @@
-const socket = io("http://localhost:3001");
+const socket = io();
 socket.on("connection");
 
 const ingameName = window.localStorage.getItem('leaguetrivial-name');
 
 // First time player receives names of all current players
-socket.on('players', players => {
+socket.on('lobby-players', players => {
     console.log("Player list: ", players);
 
     document.querySelector('.players-container').innerHTML = "";
@@ -27,7 +27,7 @@ socket.on('players', players => {
 
         // Start game button gets clicked
         document.querySelector('.start-btn').addEventListener("click", () => {
-            socket.emit('game-start');
+            socket.emit('lobby-game-start');
         })
 
         // Make the player room onwer
@@ -52,10 +52,10 @@ socket.on('players', players => {
 })
 
 // Notify the server that we just arrives
-socket.emit("new-player", ingameName);
+socket.emit("lobby-new-player", ingameName);
 
 // Receive signal if a new player arrives
-socket.on('new-player', name => {
+socket.on('lobby-new-player', name => {
     console.log("New player: ", name);
     if (name !== ingameName) {
         let playerDiv = document.createElement("div");
@@ -69,6 +69,6 @@ socket.on('new-player', name => {
 });
 
 // Waiting for signal from server to join a game
-socket.on("game-start", () => {
+socket.on("lobby-game-start", () => {
     window.location.href = "/game";
 })
