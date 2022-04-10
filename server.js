@@ -8,6 +8,8 @@ const gameIO = require('socket.io')(gameServer, { cors: { origin: "*" }})
 const spellQuestions = require('./questions/spells.json').spellQuestions;
 let socketIdName = {};
 let gameSocketIdName = {};
+const lobbyPORT = process.env.PORT || 3001;
+const gamePORT = process.env.PORT || 5000;
 
 // Player list for the lobby
 let lobbyPlayerList = [];
@@ -37,11 +39,11 @@ app.get('/spell-questions', (req, res) => {
     res.status(200).send(spellQuestions);
 })
 
-lobbyServer.listen(3001, () => {
+lobbyServer.listen(lobbyPORT, () => {
     console.log('Lobby Server running...');
 })
 
-gameServer.listen(5000, () => {
+gameServer.listen(gamePORT, () => {
     console.log('Game Server running...');
 })
 
