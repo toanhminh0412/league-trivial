@@ -1,3 +1,6 @@
+const gameBgMusic = document.getElementById('game-bg');
+gameBgMusic.play();
+
 // toggle chat
 const toggleChat = () => {
     if (document.querySelector('.chat').style.display === "none") {
@@ -202,6 +205,8 @@ const gameRun = async () => {
                 }
             }
         }
+        const rightMusic = document.getElementById('right-music');
+        rightMusic.play();
     })
 
     // Utility function to delay a certain amount of time before executing the next line
@@ -230,7 +235,7 @@ const gameRun = async () => {
     // time interval that correct answer is shown
     const resultTimer = async () => {
         document.querySelector("#answer").disabled = true;
-        document.querySelector("#question").innerText = `Answer: ${curQuestionObj.answer}`;
+        document.querySelector("#question").innerText = `Answer: ${curQuestionObj["display-answer"]}`;
         let seconds = 5;
         interval = setInterval(() => {
             seconds--;
@@ -245,7 +250,7 @@ const gameRun = async () => {
         clearInterval(interval);
     }
 
-    let turns = 3;
+    let turns = 20;
     while(turns !== 0) {
         const role = window.localStorage.getItem("role");
         if (role === "room-owner") {
@@ -258,6 +263,10 @@ const gameRun = async () => {
         point = initialPoint;
         turns--;
     }
+
+    // Stop game background music
+    // document.getElementById("game-bg").pause();
+    gameBgMusic.pause();
 
     // Decide and show the winner to the UI
     const players = document.getElementsByClassName('player');
@@ -281,6 +290,7 @@ const gameRun = async () => {
     document.getElementById('question').innerText = `Winner: ${winnerName}`;
     document.getElementById('answer').style.display = "none";
     document.getElementsByClassName('lobby-btn')[0].style.display = "flex";
+    document.getElementById("win-music").play();
 }
 
 // Room owner starts a game 

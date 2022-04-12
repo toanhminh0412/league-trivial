@@ -87,7 +87,6 @@ io.on("connection", (socket) => {
     })
 
     socket.on("game-chat", msgObj => {
-        // console.log(`${msgObj.name}: ${msgObj.msg}`);
         io.emit("game-chat", msgObj);
     })
 

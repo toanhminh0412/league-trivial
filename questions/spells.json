@@ -4,73 +4,4159 @@
             "id": 0,
             "question": "Which champion has this ability?",
             "img": "imgs/AatroxQ.png",
-            "answer": "aatrox"
+            "answer": "aatrox",
+            "display-answer": "Aatrox"
         },
         {
             "id": 1,
             "question": "Which champion has this ability?",
             "img": "imgs/AatroxW.png",
-            "answer": "aatrox"
+            "answer": "aatrox",
+            "display-answer": "Aatrox"
         },
         {
             "id": 2,
             "question": "Which champion has this ability?",
             "img": "imgs/AatroxE.png",
-            "answer": "aatrox"
+            "answer": "aatrox",
+            "display-answer": "Aatrox"
         },
         {
             "id": 3,
             "question": "Which champion has this ability?",
             "img": "imgs/AatroxR.png",
-            "answer": "aatrox"
+            "answer": "aatrox",
+            "display-answer": "Aatrox"
         }, 
         {
             "id": 4,
             "question": "Which champion has this ability?",
             "img": "imgs/AhriFoxFire.png",
-            "answer": "ahri"
+            "answer": "ahri",
+            "display-answer": "Ahri"
         },
         {
             "id": 5,
             "question": "Which champion has this ability?",
             "img": "imgs/AhriOrbofDeception.png",
-            "answer": "ahri"
+            "answer": "ahri",
+            "display-answer": "Ahri"
         },
         {
             "id": 6,
             "question": "Which champion has this ability?",
             "img": "imgs/AhriSeduce.png",
-            "answer": "ahri"
+            "answer": "ahri",
+            "display-answer": "Ahri"
         },
         {
             "id": 7,
             "question": "Which champion has this ability?",
             "img": "imgs/AhriTumble.png",
-            "answer": "ahri"
+            "answer": "ahri",
+            "display-answer": "Ahri"
         },
         {
             "id": 8,
             "question": "Which champion has this ability?",
             "img": "imgs/AkaliQ.png",
-            "answer": "akali"
+            "answer": "akali",
+            "display-answer": "Akali"
         },
         {
             "id": 9,
             "question": "Which champion has this ability?",
             "img": "imgs/AkaliW.png",
-            "answer": "akali"
+            "answer": "akali",
+            "display-answer": "Akali"
         },
         {
             "id": 10,
             "question": "Which champion has this ability?",
             "img": "imgs/AkaliE.png",
-            "answer": "akali"
+            "answer": "akali",
+            "display-answer": "Akali"
         },
         {
             "id": 11,
             "question": "Which champion has this ability?",
             "img": "imgs/AkaliR.png",
-            "answer": "akali"
+            "answer": "akali",
+            "display-answer": "Akali"
+        },
+        {
+            "id": 12,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AlistarE.png",
+            "answer": "alistar",
+            "display-answer": "Alistar"
+        },
+        {
+            "id": 13,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AlphaStrike.png",
+            "answer": "masteryi",
+            "display-answer": "Master Yi"
+        },
+        {
+            "id": 14,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AnnieE.png",
+            "answer": "annie",
+            "display-answer": "Annie"
+        },
+        {
+            "id": 15,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AnnieQ.png",
+            "answer": "annie",
+            "display-answer": "Annie"
+        },
+        {
+            "id": 16,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AnnieW.png",
+            "answer": "annie",
+            "display-answer": "Annie"
+        },
+        {
+            "id": 17,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AnnieR.png",
+            "answer": "annie",
+            "display-answer": "Annie"
+        },
+        {
+            "id": 18,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ApheliosE_ClientTooltipWrapper.png",
+            "answer": "aphelios",
+            "display-answer": "Aphelios"
+        },
+        {
+            "id": 18,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ApheliosQ_ClientTooltipWrapper.png",
+            "answer": "aphelios",
+            "display-answer": "Aphelios"
+        },
+        {
+            "id": 19,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ApheliosR.png",
+            "answer": "aphelios",
+            "display-answer": "Aphelios"
+        },
+        {
+            "id": 20,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ApheliosW.png",
+            "answer": "aphelios",
+            "display-answer": "Aphelios"
+        },
+        {
+            "id": 21,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ApheliosW.png",
+            "answer": "aphelios",
+            "display-answer": "Aphelios"
+        },
+        {
+            "id": 22,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AsheQ.png",
+            "answer": "ashe",
+            "display-answer": "Ashe"
+        },
+        {
+            "id": 23,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AsheSpiritOfTheHawk.png",
+            "answer": "ashe",
+            "display-answer": "Ashe"
+        },
+        {
+            "id": 24,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AspectOfTheCougar.png",
+            "answer": "nidalee",
+            "display-answer": "Nidalee"
+        },
+        {
+            "id": 25,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AuraofDespair.png",
+            "answer": "amumu",
+            "display-answer": "Amumu"
+        },
+        {
+            "id": 26,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AurelionSolE.png",
+            "answer": "aurelionsol",
+            "display-answer": "Aurelion Sol"
+        },
+        {
+            "id": 27,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AurelionSolQ.png",
+            "answer": "aurelionsol",
+            "display-answer": "Aurelion Sol"
+        },
+        {
+            "id": 28,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AurelionSolR.png",
+            "answer": "aurelionsol",
+            "display-answer": "Aurelion Sol"
+        },
+        {
+            "id": 29,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AurelionSolW.png",
+            "answer": "aurelionsol",
+            "display-answer": "Aurelion Sol"
+        },
+        {
+            "id": 30,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AzirEWrapper.png",
+            "answer": "azir",
+            "display-answer": "Azir"
+        },
+        {
+            "id": 31,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AzirQWrapper.png",
+            "answer": "azir",
+            "display-answer": "Azir"
+        },
+        {
+            "id": 32,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AzirR.png",
+            "answer": "azir",
+            "display-answer": "Azir"
+        },
+        {
+            "id": 33,
+            "question": "Which champion has this ability?",
+            "img": "imgs/AzirW.png",
+            "answer": "azir",
+            "display-answer": "Azir"
+        },
+        {
+            "id": 34,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BandageToss.png",
+            "answer": "amumu",
+            "display-answer": "Amumu"
+        },
+        {
+            "id": 35,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BardQ.png",
+            "answer": "bard",
+            "display-answer": "Bard"
+        },
+        {
+            "id": 36,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BardW.png",
+            "answer": "bard",
+            "display-answer": "Bard"
+        },
+        {
+            "id": 37,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BardE.png",
+            "answer": "bard",
+            "display-answer": "Bard"
+        },
+        {
+            "id": 38,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BardR.png",
+            "answer": "bard",
+            "display-answer": "Bard"
+        },
+        {
+            "id": 39,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BlindingDart.png",
+            "answer": "teemo",
+            "display-answer": "Teemo"
+        },
+        {
+            "id": 40,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BlindMonkEOne.png",
+            "answer": "leesin",
+            "display-answer": "Leesin"
+        },
+        {
+            "id": 41,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BlindMonkQOne.png",
+            "answer": "leesin",
+            "display-answer": "Leesin"
+        },
+        {
+            "id": 42,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BlindMonkRKick.png",
+            "answer": "leesin",
+            "display-answer": "Leesin"
+        },
+        {
+            "id": 43,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BlindMonkWOne.png",
+            "answer": "leesin",
+            "display-answer": "Leesin"
+        },
+        {
+            "id": 44,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BrandQ.png",
+            "answer": "brand",
+            "display-answer": "Brand"
+        },
+        {
+            "id": 45,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BrandW.png",
+            "answer": "brand",
+            "display-answer": "Brand"
+        },
+        {
+            "id": 46,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BrandE.png",
+            "answer": "brand",
+            "display-answer": "Brand"
+        },
+        {
+            "id": 47,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BrandR.png",
+            "answer": "brand",
+            "display-answer": "Brand"
+        },
+        {
+            "id": 48,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BraumE.png",
+            "answer": "braum",
+            "display-answer": "Braum"
+        },
+        {
+            "id": 49,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BraumQ.png",
+            "answer": "braum",
+            "display-answer": "Braum"
+        },
+        {
+            "id": 50,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BraumRWrapper.png",
+            "answer": "braum",
+            "display-answer": "Braum"
+        },
+        {
+            "id": 51,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BraumW.png",
+            "answer": "braum",
+            "display-answer": "Braum"
+        }, 
+        {
+            "id": 52,
+            "question": "Which champion has this ability?",
+            "img": "imgs/BurningAgony.png",
+            "answer": "drmundo",
+            "display-answer": "Dr Mundo"
+        }, 
+        {
+            "id": 53,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Bushwhack.png",
+            "answer": "nidalee",
+            "display-answer": "Nidalee"
+        }, 
+        {
+            "id": 54,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CaitlynAceintheHole.png",
+            "answer": "caitlyn",
+            "display-answer": "Caitlyn"
+        }, 
+        {
+            "id": 55,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CaitlynEntrapment.png",
+            "answer": "caitlyn",
+            "display-answer": "Caitlyn"
+        }, 
+        {
+            "id": 56,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CaitlynPiltoverPeacemaker.png",
+            "answer": "caitlyn",
+            "display-answer": "Caitlyn"
+        }, 
+        {
+            "id": 57,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CaitlynYordleTrap.png",
+            "answer": "caitlyn",
+            "display-answer": "Caitlyn"
+        }, 
+        {
+            "id": 58,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CamilleQ.png",
+            "answer": "camille",
+            "display-answer": "Camille"
+        }, 
+        {
+            "id": 59,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CamilleW.png",
+            "answer": "camille",
+            "display-answer": "Camille"
+        }, 
+        {
+            "id": 60,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CamilleE.png",
+            "answer": "camille",
+            "display-answer": "Camille"
+        }, 
+        {
+            "id": 61,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CamilleR.png",
+            "answer": "camille",
+            "display-answer": "Camille"
+        }, 
+        {
+            "id": 62,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CardmasterStack.png",
+            "answer": "twistedfate",
+            "display-answer": "Twisted Fate"
+        }, 
+        {
+            "id": 63,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CamilleR.png",
+            "answer": "camille",
+            "display-answer": "Camille"
+        }, 
+        {
+            "id": 64,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CarpetBomb.png",
+            "answer": "corki",
+            "display-answer": "Corki"
+        }, 
+        {
+            "id": 65,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CassiopeiaQ.png",
+            "answer": "cassiopeia",
+            "display-answer": "Cassiopeia"
+        }, 
+        {
+            "id": 66,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CassiopeiaW.png",
+            "answer": "cassiopeia",
+            "display-answer": "Cassiopeia"
+        }, 
+        {
+            "id": 67,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CassiopeiaE.png",
+            "answer": "cassiopeia",
+            "display-answer": "Cassiopeia"
+        }, 
+        {
+            "id": 68,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CassiopeiaR.png",
+            "answer": "cassiopeia",
+            "display-answer": "Cassiopeia"
+        },
+        {
+            "id": 69,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ChronoShift.png",
+            "answer": "zilean",
+            "display-answer": "Zilean"
+        },
+        {
+            "id": 70,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Crystallize.png",
+            "answer": "anivia",
+            "display-answer": "Anivia"
+        },
+        {
+            "id": 71,
+            "question": "Which champion has this ability?",
+            "img": "imgs/CurseoftheSadMummy.png",
+            "answer": "amumu",
+            "display-answer": "Amumu"
+        },
+        {
+            "id": 72,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DariusAxeGrabCone.png",
+            "answer": "darius",
+            "display-answer": "Darius"
+        },
+        {
+            "id": 73,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DariusCleave.png",
+            "answer": "darius",
+            "display-answer": "Darius"
+        },
+        {
+            "id": 74,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DariusExecute.png",
+            "answer": "darius",
+            "display-answer": "Darius"
+        },
+        {
+            "id": 75,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DariusNoxianTacticsONH.png",
+            "answer": "darius",
+            "display-answer": "Darius"
+        },
+        {
+            "id": 76,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Deceive.png",
+            "answer": "shaco",
+            "display-answer": "Shaco"
+        },
+        {
+            "id": 77,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DefensiveBallCurl.png",
+            "answer": "rammus",
+            "display-answer": "Rammus"
+        },
+        {
+            "id": 78,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Destiny.png",
+            "answer": "twistedfate",
+            "display-answer": "Twisted Fate"
+        },
+        {
+            "id": 79,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DianaOrbs.png",
+            "answer": "diana",
+            "display-answer": "Diana"
+        },
+        {
+            "id": 80,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DianaQ.png",
+            "answer": "diana",
+            "display-answer": "Diana"
+        },
+        {
+            "id": 81,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DianaR.png",
+            "answer": "diana",
+            "display-answer": "Diana"
+        },
+        {
+            "id": 82,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DianaTeleport.png",
+            "answer": "diana",
+            "display-answer": "Diana"
+        },
+        {
+            "id": 83,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DravenDoubleShot.png",
+            "answer": "draven",
+            "display-answer": "Draven"
+        },
+        {
+            "id": 84,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DravenFury.png",
+            "answer": "draven",
+            "display-answer": "Draven"
+        },
+        {
+            "id": 85,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DravenRCast.png",
+            "answer": "draven",
+            "display-answer": "Draven"
+        },
+        {
+            "id": 86,
+            "question": "Which champion has this ability?",
+            "img": "imgs/DravenSpinning.png",
+            "answer": "draven",
+            "display-answer": "Draven"
+        },
+        {
+            "id": 87,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EkkoE.png",
+            "answer": "ekko",
+            "display-answer": "Ekko"
+        },
+        {
+            "id": 88,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EkkoQ.png",
+            "answer": "ekko",
+            "display-answer": "Ekko"
+        },
+        {
+            "id": 89,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EkkoR.png",
+            "answer": "ekko",
+            "display-answer": "Ekko"
+        },
+        {
+            "id": 90,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EkkoW.png",
+            "answer": "ekko",
+            "display-answer": "Ekko"
+        },
+        {
+            "id": 91,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EliseHumanE.png",
+            "answer": "elise",
+            "display-answer": "Elise"
+        },
+        {
+            "id": 91,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EliseHumanE.png",
+            "answer": "elise",
+            "display-answer": "Elise"
+        },
+        {
+            "id": 92,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EliseHumanQ.png",
+            "answer": "elise",
+            "display-answer": "Elise"
+        },
+        {
+            "id": 93,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EliseHumanW.png",
+            "answer": "elise",
+            "display-answer": "Elise"
+        },
+        {
+            "id": 94,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EliseR.png",
+            "answer": "elise",
+            "display-answer": "Elise"
+        },
+        {
+            "id": 95,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EnchantedCrystalArrow.png",
+            "answer": "ashe",
+            "display-answer": "Ashe"
+        },
+        {
+            "id": 96,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EvelynnE.png",
+            "answer": "evelynn",
+            "display-answer": "Evelynn"
+        },
+        {
+            "id": 97,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EvelynnQ.png",
+            "answer": "evelynn",
+            "display-answer": "Evelynn"
+        },
+        {
+            "id": 98,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EvelynnR.png",
+            "answer": "evelynn",
+            "display-answer": "Evelynn"
+        },
+        {
+            "id": 99,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EvelynnW.png",
+            "answer": "evelynn",
+            "display-answer": "Evelynn"
+        },
+        {
+            "id": 100,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EyeOfTheStorm.png",
+            "answer": "janna",
+            "display-answer": "Janna"
+        },
+        {
+            "id": 101,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EzrealE.png",
+            "answer": "ezreal",
+            "display-answer": "Ezreal"
+        },
+        {
+            "id": 102,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EzrealQ.png",
+            "answer": "ezreal",
+            "display-answer": "Ezreal"
+        },
+        {
+            "id": 103,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EzrealR.png",
+            "answer": "ezreal",
+            "display-answer": "Ezreal"
+        },
+        {
+            "id": 104,
+            "question": "Which champion has this ability?",
+            "img": "imgs/EzrealW.png",
+            "answer": "ezreal",
+            "display-answer": "Ezreal"
+        },
+        {
+            "id": 105,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Feast.png",
+            "answer": "chogath",
+            "display-answer": "ChoGath"
+        },
+        {
+            "id": 106,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FeralScream.png",
+            "answer": "chogath",
+            "display-answer": "ChoGath"
+        },
+        {
+            "id": 107,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FerociousHowl.png",
+            "answer": "alistar",
+            "display-answer": "Alistar"
+        },
+        {
+            "id": 108,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FiddleSticksE.png",
+            "answer": "fiddlesticks",
+            "display-answer": "Fiddlesticks"
+        },
+        {
+            "id": 109,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FiddleSticksQ.png",
+            "answer": "fiddlesticks",
+            "display-answer": "Fiddlesticks"
+        },
+        {
+            "id": 110,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FiddleSticksR.png",
+            "answer": "fiddlesticks",
+            "display-answer": "Fiddlesticks"
+        },
+        {
+            "id": 111,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FiddleSticksW.png",
+            "answer": "fiddlesticks",
+            "display-answer": "Fiddlesticks"
+        },
+        {
+            "id": 112,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FioraE.png",
+            "answer": "fiora",
+            "display-answer": "Fiora"
+        },
+        {
+            "id": 113,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FioraQ.png",
+            "answer": "fiora",
+            "display-answer": "Fiora"
+        },
+        {
+            "id": 114,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FioraW.png",
+            "answer": "fiora",
+            "display-answer": "Fiora"
+        },
+        {
+            "id": 115,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FioraR.png",
+            "answer": "fiora",
+            "display-answer": "Fiora"
+        },
+        {
+            "id": 116,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FizzQ.png",
+            "answer": "fizz",
+            "display-answer": "Fizz"
+        },
+        {
+            "id": 117,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FizzW.png",
+            "answer": "fizz",
+            "display-answer": "Fizz"
+        },
+        {
+            "id": 118,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FizzE.png",
+            "answer": "fizz",
+            "display-answer": "Fizz"
+        },
+        {
+            "id": 119,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FizzR.png",
+            "answer": "fizz",
+            "display-answer": "Fizz"
+        },
+        {
+            "id": 120,
+            "question": "Which champion has this ability?",
+            "img": "imgs/FlashFrost.png",
+            "answer": "anivia",
+            "display-answer": "Anivia"
+        },
+        {
+            "id": 121,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Fling.png",
+            "answer": "singed",
+            "display-answer": "Singed"
+        },
+        {
+            "id": 122,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ForcePulse.png",
+            "answer": "kassadin",
+            "display-answer": "Kassadin"
+        },
+        {
+            "id": 123,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Frostbite.png",
+            "answer": "anivia",
+            "display-answer": "Anivia"
+        },
+        {
+            "id": 124,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GalioE.png",
+            "answer": "galio",
+            "display-answer": "Galio"
+        },
+        {
+            "id": 125,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GalioQ.png",
+            "answer": "galio",
+            "display-answer": "Galio"
+        },
+        {
+            "id": 126,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GalioW.png",
+            "answer": "galio",
+            "display-answer": "Galio"
+        },
+        {
+            "id": 127,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GalioR.png",
+            "answer": "galio",
+            "display-answer": "Galio"
+        },
+        {
+            "id": 128,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GangplankE.png",
+            "answer": "gangplank",
+            "display-answer": "Gangplank"
+        },
+        {
+            "id": 129,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GangplankQWrapper.png",
+            "answer": "gangplank",
+            "display-answer": "Gangplank"
+        },
+        {
+            "id": 130,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GangplankR.png",
+            "answer": "gangplank",
+            "display-answer": "Gangplank"
+        },
+        {
+            "id": 131,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GangplankW.png",
+            "answer": "gangplank",
+            "display-answer": "Gangplank"
+        },
+        {
+            "id": 132,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GarenE.png",
+            "answer": "garen",
+            "display-answer": "Garen"
+        },
+        {
+            "id": 133,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GarenQ.png",
+            "answer": "garen",
+            "display-answer": "Garen"
+        },
+        {
+            "id": 134,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GarenR.png",
+            "answer": "garen",
+            "display-answer": "Garen"
+        },
+        {
+            "id": 135,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GarenW.png",
+            "answer": "garen",
+            "display-answer": "Garen"
+        },
+        {
+            "id": 136,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GlacialStorm.png",
+            "answer": "anivia",
+            "display-answer": "Anivia"
+        },
+        {
+            "id": 137,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GnarE.png",
+            "answer": "gnar",
+            "display-answer": "Gnar"
+        },
+        {
+            "id": 138,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GnarQ.png",
+            "answer": "gnar",
+            "display-answer": "Gnar"
+        },
+        {
+            "id": 139,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GnarR.png",
+            "answer": "gnar",
+            "display-answer": "Gnar"
+        },
+        {
+            "id": 140,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GnarW.png",
+            "answer": "gnar",
+            "display-answer": "Gnar"
+        },
+        {
+            "id": 141,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GragasE.png",
+            "answer": "gragas",
+            "display-answer": "Gragas"
+        },
+        {
+            "id": 142,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GragasQ.png",
+            "answer": "gragas",
+            "display-answer": "Gragas"
+        },
+        {
+            "id": 143,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GragasR.png",
+            "answer": "gragas",
+            "display-answer": "Gragas"
+        },
+        {
+            "id": 144,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GragasW.png",
+            "answer": "gragas",
+            "display-answer": "Gragas"
+        },
+        {
+            "id": 145,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GravesChargeShot.png",
+            "answer": "graves",
+            "display-answer": "Graves"
+        },
+        {
+            "id": 146,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GravesMove.png",
+            "answer": "graves",
+            "display-answer": "Graves"
+        },
+        {
+            "id": 147,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GravesQLineSpell.png",
+            "answer": "graves",
+            "display-answer": "Graves"
+        },
+        {
+            "id": 148,
+            "question": "Which champion has this ability?",
+            "img": "imgs/GravesSmokeGrenade.png",
+            "answer": "graves",
+            "display-answer": "Graves"
+        },
+        {
+            "id": 149,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HallucinateFull.png",
+            "answer": "shaco",
+            "display-answer": "Shaco"
+        },
+        {
+            "id": 150,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Headbutt.png",
+            "answer": "alistar",
+            "display-answer": "Alistar"
+        },
+        {
+            "id": 151,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HecarimRamp.png",
+            "answer": "hecarim",
+            "display-answer": "Hecarim"
+        },
+        {
+            "id": 152,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HecarimRapidSlash.png",
+            "answer": "hecarim",
+            "display-answer": "Hecarim"
+        },
+        {
+            "id": 153,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HecarimUlt.png",
+            "answer": "hecarim",
+            "display-answer": "Hecarim"
+        },
+        {
+            "id": 154,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HecarimW.png",
+            "answer": "hecarim",
+            "display-answer": "Hecarim"
+        },
+        {
+            "id": 155,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HeimerdingerE.png",
+            "answer": "heimerdinger",
+            "display-answer": "Heimerdinger"
+        },
+        {
+            "id": 156,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HeimerdingerQ.png",
+            "answer": "heimerdinger",
+            "display-answer": "Heimerdinger"
+        },
+        {
+            "id": 157,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HeimerdingerR.png",
+            "answer": "heimerdinger",
+            "display-answer": "Heimerdinger"
+        },
+        {
+            "id": 158,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HeimerdingerW.png",
+            "answer": "heimerdinger",
+            "display-answer": "Heimerdinger"
+        },
+        {
+            "id": 159,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Highlander.png",
+            "answer": "masteryi",
+            "display-answer": "Master Yi"
+        },
+        {
+            "id": 160,
+            "question": "Which champion has this ability?",
+            "img": "imgs/HowlingGale.png",
+            "answer": "janna",
+            "display-answer": "Janna"
+        },
+        {
+            "id": 161,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IllaoiE.png",
+            "answer": "illaoi",
+            "display-answer": "Illaoi"
+        },
+        {
+            "id": 162,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IllaoiQ.png",
+            "answer": "illaoi",
+            "display-answer": "Illaoi"
+        },
+        {
+            "id": 163,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IllaoiR.png",
+            "answer": "illaoi",
+            "display-answer": "Illaoi"
+        },
+        {
+            "id": 164,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IllaoiW.png",
+            "answer": "illaoi",
+            "display-answer": "Illaoi"
+        },
+        {
+            "id": 165,
+            "question": "Which champion has this ability?",
+            "img": "imgs/InfectedCleaverMissileCast.png",
+            "answer": "drmundo",
+            "display-answer": "Dr Mundo"
+        },
+        {
+            "id": 166,
+            "question": "Which champion has this ability?",
+            "img": "imgs/InsanityPotion.png",
+            "answer": "singed",
+            "display-answer": "Singed"
+        },
+        {
+            "id": 167,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IreliaE.png",
+            "answer": "irelia",
+            "display-answer": "Irelia"
+        },
+        {
+            "id": 168,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IreliaQ.png",
+            "answer": "irelia",
+            "display-answer": "Irelia"
+        },
+        {
+            "id": 169,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IreliaR.png",
+            "answer": "irelia",
+            "display-answer": "Irelia"
+        },
+        {
+            "id": 170,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IreliaW.png",
+            "answer": "irelia",
+            "display-answer": "Irelia"
+        },
+        {
+            "id": 171,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IvernE.png",
+            "answer": "ivern",
+            "display-answer": "Ivern"
+        },
+        {
+            "id": 172,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IvernQ.png",
+            "answer": "ivern",
+            "display-answer": "Ivern"
+        },
+        {
+            "id": 173,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IvernR.png",
+            "answer": "ivern",
+            "display-answer": "Ivern"
+        },
+        {
+            "id": 174,
+            "question": "Which champion has this ability?",
+            "img": "imgs/IvernW.png",
+            "answer": "ivern",
+            "display-answer": "Ivern"
+        },
+        {
+            "id": 175,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JackInTheBox.png",
+            "answer": "shaco",
+            "display-answer": "Shaco"
+        },
+        {
+            "id": 176,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JarvanIVCataclysm.png",
+            "answer": "jarvaniv",
+            "display-answer": "Jarvan IV"
+        },
+        {
+            "id": 177,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JarvanIVDemacianStandard.png",
+            "answer": "jarvaniv",
+            "display-answer": "Jarvan IV"
+        },
+        {
+            "id": 178,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JarvanIVDragonStrike.png",
+            "answer": "jarvaniv",
+            "display-answer": "Jarvan IV"
+        },
+        {
+            "id": 179,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JarvanIVGoldenAegis.png",
+            "answer": "jarvaniv",
+            "display-answer": "Jarvan IV"
+        },
+        {
+            "id": 180,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JavelinToss.png",
+            "answer": "nidalee",
+            "display-answer": "Nidalee"
+        },
+        {
+            "id": 181,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JaxCounterStrike.png",
+            "answer": "jax",
+            "display-answer": "Jax"
+        },
+        {
+            "id": 182,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JaxEmpowerTwo.png",
+            "answer": "jax",
+            "display-answer": "Jax"
+        },
+        {
+            "id": 183,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JaxLeapStrike.png",
+            "answer": "jax",
+            "display-answer": "Jax"
+        },
+        {
+            "id": 184,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JaxRelentlessAssault.png",
+            "answer": "jax",
+            "display-answer": "Jax"
+        },
+        {
+            "id": 185,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JayceStanceHtG.png",
+            "answer": "jayce",
+            "display-answer": "Jayce"
+        },
+        {
+            "id": 186,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JayceStaticField.png",
+            "answer": "jayce",
+            "display-answer": "Jayce"
+        },
+        {
+            "id": 187,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JayceThunderingBlow.png",
+            "answer": "jayce",
+            "display-answer": "Jayce"
+        },
+        {
+            "id": 188,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JayceToTheSkies.png",
+            "answer": "jayce",
+            "display-answer": "Jayce"
+        },
+        {
+            "id": 189,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JhinE.png",
+            "answer": "jhin",
+            "display-answer": "Jhin"
+        },
+        {
+            "id": 190,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JhinQ.png",
+            "answer": "jhin",
+            "display-answer": "Jhin"
+        },
+        {
+            "id": 191,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JhinW.png",
+            "answer": "jhin",
+            "display-answer": "Jhin"
+        },
+        {
+            "id": 192,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JhinR.png",
+            "answer": "jhin",
+            "display-answer": "Jhin"
+        },
+        {
+            "id": 193,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JinxE.png",
+            "answer": "jinx",
+            "display-answer": "Jinx"
+        },
+        {
+            "id": 194,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JinxW.png",
+            "answer": "jinx",
+            "display-answer": "Jinx"
+        },
+        {
+            "id": 195,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JinxQ.png",
+            "answer": "jinx",
+            "display-answer": "Jinx"
+        },
+        {
+            "id": 196,
+            "question": "Which champion has this ability?",
+            "img": "imgs/JinxR.png",
+            "answer": "jinx",
+            "display-answer": "Jinx"
+        },
+        {
+            "id": 197,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaisaE.png",
+            "answer": "kaisa",
+            "display-answer": "Kaisa"
+        },
+        {
+            "id": 198,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaisaQ.png",
+            "answer": "kaisa",
+            "display-answer": "Kaisa"
+        },
+        {
+            "id": 199,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaisaR.png",
+            "answer": "kaisa",
+            "display-answer": "Kaisa"
+        },
+        {
+            "id": 200,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaisaW.png",
+            "answer": "kaisa",
+            "display-answer": "Kaisa"
+        },
+        {
+            "id": 201,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KalistaExpungeWrapper.png",
+            "answer": "kalista",
+            "display-answer": "Kalista"
+        },
+        {
+            "id": 202,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KalistaMysticShot.png",
+            "answer": "kalista",
+            "display-answer": "Kalista"
+        },
+        {
+            "id": 203,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KalistaRx.png",
+            "answer": "kalista",
+            "display-answer": "Kalista"
+        },
+        {
+            "id": 204,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KalistaW.png",
+            "answer": "kalista",
+            "display-answer": "Kalista"
+        },
+        {
+            "id": 205,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarmaMantra.png",
+            "answer": "karma",
+            "display-answer": "Karma"
+        },
+        {
+            "id": 206,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarmaQ.png",
+            "answer": "karma",
+            "display-answer": "Karma"
+        },
+        {
+            "id": 207,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarmaSolKimShield.png",
+            "answer": "karma",
+            "display-answer": "Karma"
+        },
+        {
+            "id": 208,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarmaSpiritBind.png",
+            "answer": "karma",
+            "display-answer": "Karma"
+        },
+        {
+            "id": 209,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarthusDefile.png",
+            "answer": "karthus",
+            "display-answer": "Karthus"
+        },
+        {
+            "id": 210,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarthusFallenOne.png",
+            "answer": "karthus",
+            "display-answer": "Karthus"
+        },
+        {
+            "id": 211,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarthusLayWasteA1.png",
+            "answer": "karthus",
+            "display-answer": "Karthus"
+        },
+        {
+            "id": 212,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KarthusEWrapper.png",
+            "answer": "karthus",
+            "display-answer": "Karthus"
+        },
+        {
+            "id": 213,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KatarinaEWrapper.png",
+            "answer": "katarina",
+            "display-answer": "Katarina"
+        },
+        {
+            "id": 214,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KatarinaQ.png",
+            "answer": "katarina",
+            "display-answer": "Katarina"
+        },
+        {
+            "id": 215,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KatarinaR.png",
+            "answer": "katarina",
+            "display-answer": "Katarina"
+        },
+        {
+            "id": 216,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KatarinaW.png",
+            "answer": "katarina",
+            "display-answer": "Katarina"
+        },
+        {
+            "id": 217,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KayleE.png",
+            "answer": "kayle",
+            "display-answer": "Kayle"
+        },
+        {
+            "id": 218,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KayleQ.png",
+            "answer": "kayle",
+            "display-answer": "Kayle"
+        },
+        {
+            "id": 219,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KayleR.png",
+            "answer": "kayle",
+            "display-answer": "Kayle"
+        },
+        {
+            "id": 220,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KayleW.png",
+            "answer": "kayle",
+            "display-answer": "Kayle"
+        },
+        {
+            "id": 221,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaynE.png",
+            "answer": "kayn",
+            "display-answer": "Kayn"
+        },
+        {
+            "id": 222,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaynQ.png",
+            "answer": "kayn",
+            "display-answer": "Kayn"
+        },
+        {
+            "id": 223,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaynR.png",
+            "answer": "kayn",
+            "display-answer": "Kayn"
+        },
+        {
+            "id": 224,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KaynW.png",
+            "answer": "kayn",
+            "display-answer": "Kayn"
+        },
+        {
+            "id": 225,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KennenBringTheLight.png",
+            "answer": "kennen",
+            "display-answer": "Kennen"
+        },
+        {
+            "id": 226,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KennenLightningRush.png",
+            "answer": "kennen",
+            "display-answer": "Kennen"
+        },
+        {
+            "id": 227,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KennenShurikenHurlMissile1.png",
+            "answer": "kennen",
+            "display-answer": "Kennen"
+        },
+        {
+            "id": 228,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KennenShurikenStorm.png",
+            "answer": "kennen",
+            "display-answer": "Kennen"
+        },
+        {
+            "id": 229,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KhazixE.png",
+            "answer": "khazix",
+            "display-answer": "Khazix"
+        },
+        {
+            "id": 230,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KhazixQ.png",
+            "answer": "khazix",
+            "display-answer": "Khazix"
+        },
+        {
+            "id": 231,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KhazixR.png",
+            "answer": "khazix",
+            "display-answer": "Khazix"
+        },
+        {
+            "id": 232,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KhazixW.png",
+            "answer": "khazix",
+            "display-answer": "Khazix"
+        },
+        {
+            "id": 233,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KindredEWrapper.png",
+            "answer": "kindred",
+            "display-answer": "Kindred"
+        },
+        {
+            "id": 234,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KindredQ.png",
+            "answer": "kindred",
+            "display-answer": "Kindred"
+        },
+        {
+            "id": 235,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KindredR.png",
+            "answer": "kindred",
+            "display-answer": "Kindred"
+        },
+        {
+            "id": 236,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KindredW.png",
+            "answer": "kindred",
+            "display-answer": "Kindred"
+        },
+        {
+            "id": 237,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KledE.png",
+            "answer": "kled",
+            "display-answer": "Kled"
+        },
+        {
+            "id": 238,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KledQ.png",
+            "answer": "kled",
+            "display-answer": "Kled"
+        },
+        {
+            "id": 239,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KledR.png",
+            "answer": "kled",
+            "display-answer": "Kled"
+        },
+        {
+            "id": 240,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KledW.png",
+            "answer": "kled",
+            "display-answer": "Kled"
+        },
+        {
+            "id": 241,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KogMawBioArcaneBarrage.png",
+            "answer": "kogmaw",
+            "display-answer": "Kog'Maw"
+        },
+        {
+            "id": 242,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KogMawLivingArtillery.png",
+            "answer": "kogmaw",
+            "display-answer": "Kog'Maw"
+        },
+        {
+            "id": 243,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KogMawQ.png",
+            "answer": "kogmaw",
+            "display-answer": "Kog'Maw"
+        },
+        {
+            "id": 244,
+            "question": "Which champion has this ability?",
+            "img": "imgs/KogMawVoidOoze.png",
+            "answer": "kogmaw",
+            "display-answer": "Kog'Maw"
+        }, 
+        {
+            "id": 245,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Landslide.png",
+            "answer": "malphite",
+            "display-answer": "Malphite"
+        }, 
+        {
+            "id": 246,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeblancE.png",
+            "answer": "leblanc",
+            "display-answer": "Leblanc"
+        },
+        {
+            "id": 247,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeblancQ.png",
+            "answer": "leblanc",
+            "display-answer": "Leblanc"
+        },
+        {
+            "id": 248,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeblancR.png",
+            "answer": "leblanc",
+            "display-answer": "Leblanc"
+        },
+        {
+            "id": 249,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeblancW.png",
+            "answer": "leblanc",
+            "display-answer": "Leblanc"
+        },
+        {
+            "id": 250,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeonaShieldOfDaybreak.png",
+            "answer": "leona",
+            "display-answer": "Leona"
+        },
+        {
+            "id": 251,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeonaSolarBarrier.png",
+            "answer": "leona",
+            "display-answer": "Leona"
+        },
+        {
+            "id": 252,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeonaSolarFlare.png",
+            "answer": "leona",
+            "display-answer": "Leona"
+        },
+        {
+            "id": 253,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LeonaZenithBlade.png",
+            "answer": "leona",
+            "display-answer": "Leona"
+        },
+        {
+            "id": 254,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LissandraE.png",
+            "answer": "lissandra",
+            "display-answer": "Lissandra"
+        },
+        {
+            "id": 255,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LissandraQ.png",
+            "answer": "lissandra",
+            "display-answer": "Lissandra"
+        },
+        {
+            "id": 256,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LissandraR.png",
+            "answer": "lissandra",
+            "display-answer": "Lissandra"
+        },
+        {
+            "id": 257,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LissandraW.png",
+            "answer": "lissandra",
+            "display-answer": "Lissandra"
+        },
+        {
+            "id": 258,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LucianE.png",
+            "answer": "lucian",
+            "display-answer": "Lucian"
+        },
+        {
+            "id": 259,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LucianQ.png",
+            "answer": "lucian",
+            "display-answer": "Lucian"
+        },
+        {
+            "id": 260,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LucianR.png",
+            "answer": "lucian",
+            "display-answer": "Lucian"
+        },
+        {
+            "id": 261,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LucianW.png",
+            "answer": "lucian",
+            "display-answer": "Lucian"
+        },
+        {
+            "id": 262,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuluE.png",
+            "answer": "lulu",
+            "display-answer": "Lulu"
+        },
+        {
+            "id": 263,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuluQ.png",
+            "answer": "lulu",
+            "display-answer": "Lulu"
+        },
+        {
+            "id": 264,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuluR.png",
+            "answer": "lulu",
+            "display-answer": "Lulu"
+        },
+        {
+            "id": 265,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuluW.png",
+            "answer": "lulu",
+            "display-answer": "Lulu"
+        },
+        {
+            "id": 266,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuxLightBinding.png",
+            "answer": "lux",
+            "display-answer": "Lux"
+        },
+        {
+            "id": 267,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuxLightStrikeKugel.png",
+            "answer": "lux",
+            "display-answer": "Lux"
+        },
+        {
+            "id": 268,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuxMaliceCannon.png",
+            "answer": "lux",
+            "display-answer": "Lux"
+        },
+        {
+            "id": 269,
+            "question": "Which champion has this ability?",
+            "img": "imgs/LuxPrismaticWave.png",
+            "answer": "lux",
+            "display-answer": "Lux"
+        },
+        {
+            "id": 270,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MalzaharE.png",
+            "answer": "malzahar",
+            "display-answer": "Malzahar"
+        },
+        {
+            "id": 271,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MalzaharQ.png",
+            "answer": "malzahar",
+            "display-answer": "Malzahar"
+        },
+        {
+            "id": 272,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MalzaharR.png",
+            "answer": "malzahar",
+            "display-answer": "Malzahar"
+        },
+        {
+            "id": 273,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MalzaharW.png",
+            "answer": "malzahar",
+            "display-answer": "Malzahar"
+        },
+        {
+            "id": 274,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MaokaiE.png",
+            "answer": "maokai",
+            "display-answer": "Maokai"
+        },
+        {
+            "id": 275,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MaokaiQ.png",
+            "answer": "maokai",
+            "display-answer": "Maokai"
+        },
+        {
+            "id": 276,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MaokaiR.png",
+            "answer": "maokai",
+            "display-answer": "Maokai"
+        },
+        {
+            "id": 277,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MaokaiW.png",
+            "answer": "maokai",
+            "display-answer": "Maokai"
+        },
+        {
+            "id": 278,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Masochism.png",
+            "answer": "drmundo",
+            "display-answer": "Dr. Mundo"
+        },
+        {
+            "id": 279,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Meditate.png",
+            "answer": "masteryi",
+            "display-answer": "Master Yi"
+        },
+        {
+            "id": 280,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MegaAdhesive.png",
+            "answer": "singed",
+            "display-answer": "Singed"
+        },
+        {
+            "id": 281,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MissFortuneBulletTime.png",
+            "answer": "missfortune",
+            "display-answer": "Miss Fortune"
+        },
+        {
+            "id": 282,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MissFortuneRicochetShot.png",
+            "answer": "missfortune",
+            "display-answer": "Miss Fortune"
+        },
+        {
+            "id": 283,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MissFortuneScattershot.png",
+            "answer": "missfortune",
+            "display-answer": "Miss Fortune"
+        },
+        {
+            "id": 284,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MissFortuneViciousStrikes.png",
+            "answer": "missfortune",
+            "display-answer": "Miss Fortune"
+        },
+        {
+            "id": 285,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MissileBarrage.png",
+            "answer": "corki",
+            "display-answer": "Corki"
+        },
+        {
+            "id": 286,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MonkeyKindDecoy.png",
+            "answer": "wukong",
+            "display-answer": "Wukong"
+        },
+        {
+            "id": 287,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MonkeyKindDoubleAttack.png",
+            "answer": "wukong",
+            "display-answer": "Wukong"
+        },
+        {
+            "id": 288,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MonkeyKindNimbus.png",
+            "answer": "wukong",
+            "display-answer": "Wukong"
+        },
+        {
+            "id": 289,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MonkeyKindSpinToWin.png",
+            "answer": "wukong",
+            "display-answer": "Wukong"
+        },
+        {
+            "id": 290,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MordekaiserE.png",
+            "answer": "mordekaiser",
+            "display-answer": "Mordekaiser"
+        },
+        {
+            "id": 291,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MordekaiserQ.png",
+            "answer": "mordekaiser",
+            "display-answer": "Mordekaiser"
+        },
+        {
+            "id": 292,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MordekaiserR.png",
+            "answer": "mordekaiser",
+            "display-answer": "Mordekaiser"
+        },
+        {
+            "id": 293,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MordekaiserW.png",
+            "answer": "mordekaiser",
+            "display-answer": "Mordekaiser"
+        },
+        {
+            "id": 294,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MorganaE.png",
+            "answer": "morgana",
+            "display-answer": "Morgana"
+        },
+        {
+            "id": 295,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MorganaQ.png",
+            "answer": "morgana",
+            "display-answer": "Morgana"
+        },
+        {
+            "id": 296,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MorganaR.png",
+            "answer": "morgana",
+            "display-answer": "Morgana"
+        },
+        {
+            "id": 297,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MorganaW.png",
+            "answer": "morgana",
+            "display-answer": "Morgana"
+        },
+        {
+            "id": 298,
+            "question": "Which champion has this ability?",
+            "img": "imgs/MoveQuick.png",
+            "answer": "teemo",
+            "display-answer": "Teemo"
+        },
+        {
+            "id": 299,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NamiE.png",
+            "answer": "nami",
+            "display-answer": "Nami"
+        },
+        {
+            "id": 300,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NamiQ.png",
+            "answer": "nami",
+            "display-answer": "Nami"
+        },
+        {
+            "id": 301,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NamiR.png",
+            "answer": "nami",
+            "display-answer": "Nami"
+        },
+        {
+            "id": 302,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NamiW.png",
+            "answer": "nami",
+            "display-answer": "Nami"
+        },
+        {
+            "id": 303,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NasusE.png",
+            "answer": "nasus",
+            "display-answer": "Nasus"
+        },
+        {
+            "id": 304,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NasusQ.png",
+            "answer": "nasus",
+            "display-answer": "Nasus"
+        },
+        {
+            "id": 305,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NasusR.png",
+            "answer": "nasus",
+            "display-answer": "Nasus"
+        },
+        {
+            "id": 306,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NasusW.png",
+            "answer": "nasus",
+            "display-answer": "Nasus"
+        },
+        {
+            "id": 307,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NautilusAnchorDrag.png",
+            "answer": "nautilus",
+            "display-answer": "Nautilus"
+        },
+        {
+            "id": 308,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NautilusGrandLine.png",
+            "answer": "nautilus",
+            "display-answer": "Nautilus"
+        },
+        {
+            "id": 309,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NautilusPiercingGaze.png",
+            "answer": "nautilus",
+            "display-answer": "Nautilus"
+        },
+        {
+            "id": 310,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NautilusSplashZone.png",
+            "answer": "nautilus",
+            "display-answer": "Nautilus"
+        },
+        {
+            "id": 311,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NeekoE.png",
+            "answer": "neeko",
+            "display-answer": "Neeko"
+        },
+        {
+            "id": 312,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NeekoQ.png",
+            "answer": "neeko",
+            "display-answer": "Neeko"
+        },
+        {
+            "id": 313,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NeekoR.png",
+            "answer": "neeko",
+            "display-answer": "Neeko"
+        },
+        {
+            "id": 314,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NeekoW.png",
+            "answer": "neeko",
+            "display-answer": "Neeko"
+        },
+        {
+            "id": 315,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NetherBlade.png",
+            "answer": "kassadin",
+            "display-answer": "Kassadin"
+        },
+        {
+            "id": 316,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NocturneDuskbringer.png",
+            "answer": "nocturne",
+            "display-answer": "Nocturne"
+        },
+        {
+            "id": 317,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NocturneParanoia.png",
+            "answer": "nocturne",
+            "display-answer": "Nocturne"
+        },
+        {
+            "id": 318,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NocturneShroudofDarkness.png",
+            "answer": "nocturne",
+            "display-answer": "Nocturne"
+        },
+        {
+            "id": 319,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NocturneUnspeakableHorror.png",
+            "answer": "nocturne",
+            "display-answer": "Nocturne"
+        },
+        {
+            "id": 320,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NullLance.png",
+            "answer": "kassadin",
+            "display-answer": "Kassadin"
+        },
+        {
+            "id": 321,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NunuE.png",
+            "answer": "nunu",
+            "display-answer": "Nunu"
+        },
+        {
+            "id": 322,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NunuQ.png",
+            "answer": "nunu",
+            "display-answer": "Nunu"
+        },
+        {
+            "id": 323,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NunuR.png",
+            "answer": "nunu",
+            "display-answer": "Nunu"
+        },
+        {
+            "id": 324,
+            "question": "Which champion has this ability?",
+            "img": "imgs/NunuW.png",
+            "answer": "nunu",
+            "display-answer": "Nunu"
+        },
+        {
+            "id": 325,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Obduracy.png",
+            "answer": "malphite",
+            "display-answer": "Malphite"
+        },
+        {
+            "id": 326,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OlafAxeThrowCast.png",
+            "answer": "olaf",
+            "display-answer": "Olaf"
+        },
+        {
+            "id": 327,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OlafFrenziedStrikes.png",
+            "answer": "olaf",
+            "display-answer": "Olaf"
+        },
+        {
+            "id": 328,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OlafRagnarok.png",
+            "answer": "olaf",
+            "display-answer": "Olaf"
+        },
+        {
+            "id": 329,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OlafRecklessStrike.png",
+            "answer": "olaf",
+            "display-answer": "Olaf"
+        },
+        {
+            "id": 330,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrianaDetonateCommand.png",
+            "answer": "oriana",
+            "display-answer": "Oriana"
+        },
+        {
+            "id": 331,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrianaDissonanceCommand.png",
+            "answer": "oriana",
+            "display-answer": "Oriana"
+        },
+        {
+            "id": 332,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrianaIzunaCommand.png",
+            "answer": "oriana",
+            "display-answer": "Oriana"
+        },
+        {
+            "id": 333,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrianaRedactCommand.png",
+            "answer": "oriana",
+            "display-answer": "Oriana"
+        },
+        {
+            "id": 334,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrnnE.png",
+            "answer": "ornn",
+            "display-answer": "Ornn"
+        },
+        {
+            "id": 335,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrnnQ.png",
+            "answer": "ornn",
+            "display-answer": "Ornn"
+        },
+        {
+            "id": 336,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrnnR.png",
+            "answer": "ornn",
+            "display-answer": "Ornn"
+        },
+        {
+            "id": 337,
+            "question": "Which champion has this ability?",
+            "img": "imgs/OrnnW.png",
+            "answer": "ornn",
+            "display-answer": "Ornn"
+        },
+        {
+            "id": 338,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Overdrive.png",
+            "answer": "blitzcrank",
+            "display-answer": "Blitzcrank"
+        },
+        {
+            "id": 339,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PantheonE.png",
+            "answer": "pantheon",
+            "display-answer": "Pantheon"
+        },
+        {
+            "id": 340,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PantheonQ.png",
+            "answer": "pantheon",
+            "display-answer": "Pantheon"
+        },
+        {
+            "id": 341,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PantheonR.png",
+            "answer": "pantheon",
+            "display-answer": "Pantheon"
+        },
+        {
+            "id": 342,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PantheonW.png",
+            "answer": "pantheon",
+            "display-answer": "Pantheon"
+        },
+        {
+            "id": 343,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PhosphorusBomb.png",
+            "answer": "corki",
+            "display-answer": "Corki"
+        },
+        {
+            "id": 344,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PickACard.png",
+            "answer": "twistedfate",
+            "display-answer": "Twisted Fate"
+        },
+        {
+            "id": 345,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PoisonTrail.png",
+            "answer": "singed",
+            "display-answer": "Singed"
+        },
+        {
+            "id": 346,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PoppyE.png",
+            "answer": "poppy",
+            "display-answer": "Poppy"
+        },
+        {
+            "id": 347,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PoppyQ.png",
+            "answer": "poppy",
+            "display-answer": "Poppy"
+        },
+        {
+            "id": 348,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PoppyR.png",
+            "answer": "poppy",
+            "display-answer": "Poppy"
+        },
+        {
+            "id": 349,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PoppyW.png",
+            "answer": "poppy",
+            "display-answer": "Poppy"
+        },
+        {
+            "id": 350,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PowerBall.png",
+            "answer": "rammus",
+            "display-answer": "Rammus"
+        },
+        {
+            "id": 351,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PowerFist.png",
+            "answer": "blitzcrank",
+            "display-answer": "Blitzcrank"
+        },
+        {
+            "id": 352,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PrimalSurge.png",
+            "answer": "nidalee",
+            "display-answer": "Nidalee"
+        },
+        {
+            "id": 353,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Pulverize.png",
+            "answer": "alistar",
+            "display-answer": "Alistar"
+        },
+        {
+            "id": 354,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PuncturingTaunt.png",
+            "answer": "rammus",
+            "display-answer": "Rammus"
+        },
+        {
+            "id": 355,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PykeE.png",
+            "answer": "pyke",
+            "display-answer": "Pyke"
+        },
+        {
+            "id": 356,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PykeQ.png",
+            "answer": "pyke",
+            "display-answer": "Pyke"
+        },
+        {
+            "id": 357,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PykeR.png",
+            "answer": "pyke",
+            "display-answer": "Pyke"
+        },
+        {
+            "id": 358,
+            "question": "Which champion has this ability?",
+            "img": "imgs/PykeW.png",
+            "answer": "pyke",
+            "display-answer": "Pyke"
+        },
+        {
+            "id": 359,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QiyanaE.png",
+            "answer": "qiyana",
+            "display-answer": "Qiyana"
+        },
+        {
+            "id": 360,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QiyanaQ.png",
+            "answer": "qiyana",
+            "display-answer": "Qiyana"
+        },
+        {
+            "id": 361,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QiyanaR.png",
+            "answer": "qiyana",
+            "display-answer": "Qiyana"
+        },
+        {
+            "id": 362,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QiyanaW.png",
+            "answer": "qiyana",
+            "display-answer": "Qiyana"
+        },
+        {
+            "id": 363,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QuinnE.png",
+            "answer": "quinn",
+            "display-answer": "Quinn"
+        },
+        {
+            "id": 364,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QuinnQ.png",
+            "answer": "quinn",
+            "display-answer": "Quinn"
+        },
+        {
+            "id": 365,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QuinnR.png",
+            "answer": "quinn",
+            "display-answer": "Quinn"
+        },
+        {
+            "id": 366,
+            "question": "Which champion has this ability?",
+            "img": "imgs/QuinnW.png",
+            "answer": "quinn",
+            "display-answer": "Quinn"
+        },
+        {
+            "id": 367,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RakanE.png",
+            "answer": "rakan",
+            "display-answer": "Rakan"
+        },
+        {
+            "id": 368,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RakanQ.png",
+            "answer": "rakan",
+            "display-answer": "Rakan"
+        },
+        {
+            "id": 369,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RakanR.png",
+            "answer": "rakan",
+            "display-answer": "Rakan"
+        },
+        {
+            "id": 370,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RakanW.png",
+            "answer": "rakan",
+            "display-answer": "Rakan"
+        },
+        {
+            "id": 371,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ReapTheWhirlwind.png",
+            "answer": "janna",
+            "display-answer": "Janna"
+        },
+        {
+            "id": 372,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RekSaiE.png",
+            "answer": "reksai",
+            "display-answer": "Rek'Sai"
+        },
+        {
+            "id": 373,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RekSaiQ.png",
+            "answer": "reksai",
+            "display-answer": "Rek'Sai"
+        },
+        {
+            "id": 374,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RekSaiRWrapper.png",
+            "answer": "reksai",
+            "display-answer": "Rek'Sai"
+        },
+        {
+            "id": 375,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RekSaiW.png",
+            "answer": "reksai",
+            "display-answer": "Rek'Sai"
+        },
+        {
+            "id": 376,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RenektonCleave.png",
+            "answer": "renekton",
+            "display-answer": "Renekton"
+        },
+        {
+            "id": 377,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RenektonPreExecute.png",
+            "answer": "renekton",
+            "display-answer": "Renekton"
+        },
+        {
+            "id": 378,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RenektonReignOfTheTyrant.png",
+            "answer": "renekton",
+            "display-answer": "Renekton"
+        },
+        {
+            "id": 379,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RenektonSliceAndDice.png",
+            "answer": "renekton",
+            "display-answer": "Renekton"
+        },
+        {
+            "id": 380,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RengarE.png",
+            "answer": "rengar",
+            "display-answer": "Rengar"
+        },
+        {
+            "id": 381,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RengarQ.png",
+            "answer": "rengar",
+            "display-answer": "Rengar"
+        },
+        {
+            "id": 382,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RengarR.png",
+            "answer": "rengar",
+            "display-answer": "Rengar"
+        },
+        {
+            "id": 383,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RengarW.png",
+            "answer": "rengar",
+            "display-answer": "Rengar"
+        },
+        {
+            "id": 384,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RiftWalk.png",
+            "answer": "kassadin",
+            "display-answer": "Kassadin"
+        },
+        {
+            "id": 385,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RivenFeint.png",
+            "answer": "riven",
+            "display-answer": "Riven"
+        },
+        {
+            "id": 386,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RivenFengShuiEngine.png",
+            "answer": "riven",
+            "display-answer": "Riven"
+        },
+        {
+            "id": 387,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RivenMartyr.png",
+            "answer": "riven",
+            "display-answer": "Riven"
+        },
+        {
+            "id": 388,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RivenTriCleave.png",
+            "answer": "riven",
+            "display-answer": "Riven"
+        },
+        {
+            "id": 389,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RocketGrab.png",
+            "answer": "blitzcrank",
+            "display-answer": "Blitzcrank"
+        },
+        {
+            "id": 390,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RumbleCarpetBomb.png",
+            "answer": "rumble",
+            "display-answer": "Rumble"
+        },
+        {
+            "id": 391,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RumbleFlameThrower.png",
+            "answer": "rumble",
+            "display-answer": "Rumble"
+        },
+        {
+            "id": 392,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RumbleGrenade.png",
+            "answer": "rumble",
+            "display-answer": "Rumble"
+        },
+        {
+            "id": 393,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RumbleShield.png",
+            "answer": "rumble",
+            "display-answer": "Rumble"
+        },
+        {
+            "id": 394,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Rupture.png",
+            "answer": "chogath",
+            "display-answer": "Cho'Gath"
+        },
+        {
+            "id": 395,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RyzeE.png",
+            "answer": "ryze",
+            "display-answer": "Ryze"
+        },
+        {
+            "id": 396,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RyzeQWrapper.png",
+            "answer": "ryze",
+            "display-answer": "Ryze"
+        },
+        {
+            "id": 397,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RyzeR.png",
+            "answer": "ryze",
+            "display-answer": "Ryze"
+        },
+        {
+            "id": 398,
+            "question": "Which champion has this ability?",
+            "img": "imgs/RyzeW.png",
+            "answer": "ryze",
+            "display-answer": "Ryze"
+        },
+        {
+            "id": 399,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Sadism.png",
+            "answer": "drmundo",
+            "display-answer": "Dr. Mundo"
+        },
+        {
+            "id": 400,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SeismicShard.png",
+            "answer": "malphite",
+            "display-answer": "Malphite"
+        },
+        {
+            "id": 401,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SejuaniE.png",
+            "answer": "sejuani",
+            "display-answer": "Sejuani"
+        },
+        {
+            "id": 402,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SejuaniQ.png",
+            "answer": "sejuani",
+            "display-answer": "Sejuani"
+        },
+        {
+            "id": 403,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SejuaniR.png",
+            "answer": "sejuani",
+            "display-answer": "Sejuani"
+        },
+        {
+            "id": 404,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SejuaniW.png",
+            "answer": "sejuani",
+            "display-answer": "Sejuani"
+        },
+        {
+            "id": 405,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SennaE.png",
+            "answer": "senna",
+            "display-answer": "Senna"
+        },
+        {
+            "id": 406,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SennaQ.png",
+            "answer": "senna",
+            "display-answer": "Senna"
+        },
+        {
+            "id": 407,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SennaR.png",
+            "answer": "senna",
+            "display-answer": "Senna"
+        },
+        {
+            "id": 408,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SennaW.png",
+            "answer": "senna",
+            "display-answer": "Senna"
+        },
+        {
+            "id": 409,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SettE.png",
+            "answer": "sett",
+            "display-answer": "Sett"
+        },
+        {
+            "id": 410,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SettQ.png",
+            "answer": "sett",
+            "display-answer": "Sett"
+        },
+        {
+            "id": 411,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SettR.png",
+            "answer": "sett",
+            "display-answer": "Sett"
+        },
+        {
+            "id": 412,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SettW.png",
+            "answer": "sett",
+            "display-answer": "Sett"
+        },
+        {
+            "id": 413,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShenE.png",
+            "answer": "shen",
+            "display-answer": "Shen"
+        },
+        {
+            "id": 414,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShenQ.png",
+            "answer": "shen",
+            "display-answer": "Shen"
+        },
+        {
+            "id": 415,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShenR.png",
+            "answer": "shen",
+            "display-answer": "Shen"
+        },
+        {
+            "id": 416,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShenW.png",
+            "answer": "shen",
+            "display-answer": "Shen"
+        },
+        {
+            "id": 417,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShyvanaDoubleAttack.png",
+            "answer": "shyvana",
+            "display-answer": "Shyvana"
+        },
+        {
+            "id": 418,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShyvanaFireball.png",
+            "answer": "shyvana",
+            "display-answer": "Shyvana"
+        },
+        {
+            "id": 419,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShyvanaImmolationAura.png",
+            "answer": "shyvana",
+            "display-answer": "Shyvana"
+        },
+        {
+            "id": 420,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ShyvanaTransformCast.png",
+            "answer": "shyvana",
+            "display-answer": "Shyvana"
+        },
+        {
+            "id": 421,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SionE.png",
+            "answer": "sion",
+            "display-answer": "Sion"
+        },
+        {
+            "id": 422,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SionQ.png",
+            "answer": "sion",
+            "display-answer": "Sion"
+        },
+        {
+            "id": 423,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SionR.png",
+            "answer": "sion",
+            "display-answer": "Sion"
+        },
+        {
+            "id": 424,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SionW.png",
+            "answer": "sion",
+            "display-answer": "Sion"
+        },
+        {
+            "id": 425,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SivirE.png",
+            "answer": "sivir",
+            "display-answer": "Sivir"
+        },
+        {
+            "id": 426,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SivirQ.png",
+            "answer": "sivir",
+            "display-answer": "Sivir"
+        },
+        {
+            "id": 427,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SivirR.png",
+            "answer": "sivir",
+            "display-answer": "Sivir"
+        },
+        {
+            "id": 428,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SivirW.png",
+            "answer": "sivir",
+            "display-answer": "Sivir"
+        },
+        {
+            "id": 429,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SkarnerExoskeleton.png",
+            "answer": "skarner",
+            "display-answer": "Skarner"
+        },
+        {
+            "id": 430,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SkarnerFracture.png",
+            "answer": "skarner",
+            "display-answer": "Skarner"
+        },
+        {
+            "id": 431,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SkarnerImpale.png",
+            "answer": "skarner",
+            "display-answer": "Skarner"
+        },
+        {
+            "id": 432,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SkarnerVirulentSlash.png",
+            "answer": "skarner",
+            "display-answer": "Skarner"
+        },
+        {
+            "id": 433,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SonaE.png",
+            "answer": "sona",
+            "display-answer": "Sona"
+        },
+        {
+            "id": 434,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SonaQ.png",
+            "answer": "sona",
+            "display-answer": "Sona"
+        },
+        {
+            "id": 435,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SonaR.png",
+            "answer": "sona",
+            "display-answer": "Sona"
+        },
+        {
+            "id": 436,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SonaW.png",
+            "answer": "sona",
+            "display-answer": "Sona"
+        },
+        {
+            "id": 437,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SorakaE.png",
+            "answer": "soraka",
+            "display-answer": "Soraka"
+        },
+        {
+            "id": 438,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SorakaQ.png",
+            "answer": "soraka",
+            "display-answer": "Soraka"
+        },
+        {
+            "id": 439,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SorakaR.png",
+            "answer": "soraka",
+            "display-answer": "Soraka"
+        },
+        {
+            "id": 440,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SorakaW.png",
+            "answer": "soraka",
+            "display-answer": "Soraka"
+        },
+        {
+            "id": 441,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SowTheWind.png",
+            "answer": "janna",
+            "display-answer": "Janna"
+        },
+        {
+            "id": 442,
+            "question": "Which champion has this ability?",
+            "img": "imgs/StaticField.png",
+            "answer": "blitzcrank",
+            "display-answer": "Blitzcrank"
+        },
+        {
+            "id": 443,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SwainE.png",
+            "answer": "swain",
+            "display-answer": "Swain"
+        },
+        {
+            "id": 444,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SwainQ.png",
+            "answer": "swain",
+            "display-answer": "Swain"
+        },
+        {
+            "id": 445,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SwainR.png",
+            "answer": "swain",
+            "display-answer": "Swain"
+        },
+        {
+            "id": 446,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SwainW.png",
+            "answer": "swain",
+            "display-answer": "Swain"
+        },
+        {
+            "id": 447,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SylasE.png",
+            "answer": "sylas",
+            "display-answer": "Sylas"
+        },
+        {
+            "id": 448,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SylasQ.png",
+            "answer": "sylas",
+            "display-answer": "Sylas"
+        },
+        {
+            "id": 449,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SylasR.png",
+            "answer": "sylas",
+            "display-answer": "Sylas"
+        },
+        {
+            "id": 450,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SylasW.png",
+            "answer": "sylas",
+            "display-answer": "Sylas"
+        },
+        {
+            "id": 451,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SyndraE.png",
+            "answer": "syndra",
+            "display-answer": "Syndra"
+        },
+        {
+            "id": 452,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SyndraW.png",
+            "answer": "syndra",
+            "display-answer": "Syndra"
+        },
+        {
+            "id": 453,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SyndraQ.png",
+            "answer": "syndra",
+            "display-answer": "Syndra"
+        },
+        {
+            "id": 454,
+            "question": "Which champion has this ability?",
+            "img": "imgs/SyndraR.png",
+            "answer": "syndra",
+            "display-answer": "Syndra"
+        },
+        {
+            "id": 455,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TahmKenchE.png",
+            "answer": "tahmkench",
+            "display-answer": "Tahm Kench"
+        },
+        {
+            "id": 456,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TahmKenchNewR.png",
+            "answer": "tahmkench",
+            "display-answer": "Tahm Kench"
+        },
+        {
+            "id": 457,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TahmKenchQ.png",
+            "answer": "tahmkench",
+            "display-answer": "Tahm Kench"
+        },
+        {
+            "id": 458,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TahmKenchW.png",
+            "answer": "tahmkench",
+            "display-answer": "Tahm Kench"
+        },
+        {
+            "id": 459,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaliyahE.png",
+            "answer": "taliyah",
+            "display-answer": "Taliyah"
+        },
+        {
+            "id": 460,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaliyahQ.png",
+            "answer": "taliyah",
+            "display-answer": "Taliyah"
+        },
+        {
+            "id": 461,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaliyahR.png",
+            "answer": "taliyah",
+            "display-answer": "Taliyah"
+        },
+        {
+            "id": 462,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaliyahWVC.png",
+            "answer": "taliyah",
+            "display-answer": "Taliyah"
+        },
+        {
+            "id": 463,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TalonE.png",
+            "answer": "talon",
+            "display-answer": "Talon"
+        },
+        {
+            "id": 464,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TalonQ.png",
+            "answer": "talon",
+            "display-answer": "Talon"
+        },
+        {
+            "id": 465,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TalonR.png",
+            "answer": "talon",
+            "display-answer": "Talon"
+        },
+        {
+            "id": 466,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TalonW.png",
+            "answer": "talon",
+            "display-answer": "Talon"
+        },
+        {
+            "id": 467,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Tantrum.png",
+            "answer": "amumu",
+            "display-answer": "Amumu"
+        },
+        {
+            "id": 468,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaricE.png",
+            "answer": "taric",
+            "display-answer": "Taric"
+        },
+        {
+            "id": 469,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaricQ.png",
+            "answer": "taric",
+            "display-answer": "Taric"
+        },
+        {
+            "id": 470,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaricR.png",
+            "answer": "taric",
+            "display-answer": "Taric"
+        },
+        {
+            "id": 471,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TaricW.png",
+            "answer": "taric",
+            "display-answer": "Taric"
+        },
+        {
+            "id": 472,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TeemoRCast.png",
+            "answer": "teemo",
+            "display-answer": "Teemo"
+        },
+        {
+            "id": 473,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ThreshE.png",
+            "answer": "thresh",
+            "display-answer": "Thresh"
+        },
+        {
+            "id": 474,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ThreshQ.png",
+            "answer": "thresh",
+            "display-answer": "Thresh"
+        },
+        {
+            "id": 475,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ThreshRPenta.png",
+            "answer": "thresh",
+            "display-answer": "Thresh"
+        },
+        {
+            "id": 476,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ThreshW.png",
+            "answer": "thresh",
+            "display-answer": "Thresh"
+        },
+        {
+            "id": 477,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TimeWarp.png",
+            "answer": "zilean",
+            "display-answer": "Zilean"
+        },
+        {
+            "id": 478,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ToxicShot.png",
+            "answer": "teemo",
+            "display-answer": "Teemo"
+        },
+        {
+            "id": 479,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Tremors2.png",
+            "answer": "rammus",
+            "display-answer": "Rammus"
+        },
+        {
+            "id": 480,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TristanaE.png",
+            "answer": "tristana",
+            "display-answer": "Tristana"
+        },
+        {
+            "id": 481,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TristanaQ.png",
+            "answer": "tristana",
+            "display-answer": "Tristana"
+        },
+        {
+            "id": 482,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TristanaR.png",
+            "answer": "tristana",
+            "display-answer": "Tristana"
+        },
+        {
+            "id": 483,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TristanaW.png",
+            "answer": "tristana",
+            "display-answer": "Tristana"
+        },
+        {
+            "id": 484,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TrundleCircle.png",
+            "answer": "trundle",
+            "display-answer": "Trundle"
+        },
+        {
+            "id": 485,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Trundledesecrate.png",
+            "answer": "trundle",
+            "display-answer": "Trundle"
+        },
+        {
+            "id": 486,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TrundlePain.png",
+            "answer": "trundle",
+            "display-answer": "Trundle"
+        },
+        {
+            "id": 487,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TrundleTrollSmash.png",
+            "answer": "trundle",
+            "display-answer": "Trundle"
+        },
+        {
+            "id": 488,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TryndamereE.png",
+            "answer": "tryndamere",
+            "display-answer": "Tryndamere"
+        },
+        {
+            "id": 489,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TryndamereQ.png",
+            "answer": "tryndamere",
+            "display-answer": "Tryndamere"
+        },
+        {
+            "id": 490,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TryndamereW.png",
+            "answer": "tryndamere",
+            "display-answer": "Tryndamere"
+        },
+        {
+            "id": 491,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TwitchExpunge.png",
+            "answer": "twitch",
+            "display-answer": "Twitch"
+        },
+        {
+            "id": 492,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TwitchFullAutomatic.png",
+            "answer": "twitch",
+            "display-answer": "Twitch"
+        },
+        {
+            "id": 493,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TwitchHideInShadows.png",
+            "answer": "twitch",
+            "display-answer": "Twitch"
+        },
+        {
+            "id": 494,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TwitchVenomCask.png",
+            "answer": "twitch",
+            "display-answer": "Twitch"
+        },
+        {
+            "id": 495,
+            "question": "Which champion has this ability?",
+            "img": "imgs/TwoShivPoison.png",
+            "answer": "shaco",
+            "display-answer": "Shaco"
+        },
+        {
+            "id": 496,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UdyrBearStance.png",
+            "answer": "udyr",
+            "display-answer": "Udyr"
+        },
+        {
+            "id": 497,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UdyrPhoenixStance.png",
+            "answer": "udyr",
+            "display-answer": "Udyr"
+        },
+        {
+            "id": 498,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UdyrTigerStance.png",
+            "answer": "udyr",
+            "display-answer": "Udyr"
+        },
+        {
+            "id": 499,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UdyrTurtleStance.png",
+            "answer": "udyr",
+            "display-answer": "Udyr"
+        },
+        {
+            "id": 500,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UFSlash.png",
+            "answer": "malphite",
+            "display-answer": "Malphite"
+        },
+        {
+            "id": 501,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UndyingRage.png",
+            "answer": "tryndamere",
+            "display-answer": "Tryndamere"
+        },
+        {
+            "id": 502,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UrgotE.png",
+            "answer": "urgot",
+            "display-answer": "Urgot"
+        },
+        {
+            "id": 503,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UrgotQ.png",
+            "answer": "urgot",
+            "display-answer": "Urgot"
+        },
+        {
+            "id": 504,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UrgotR.png",
+            "answer": "urgot",
+            "display-answer": "Urgot"
+        },
+        {
+            "id": 505,
+            "question": "Which champion has this ability?",
+            "img": "imgs/UrgotW.png",
+            "answer": "urgot",
+            "display-answer": "Urgot"
+        },
+        {
+            "id": 506,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VarusE.png",
+            "answer": "varus",
+            "display-answer": "Varus"
+        },
+        {
+            "id": 507,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VarusQ.png",
+            "answer": "varus",
+            "display-answer": "Varus"
+        },
+        {
+            "id": 508,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VarusR.png",
+            "answer": "varus",
+            "display-answer": "Varus"
+        },
+        {
+            "id": 509,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VarusW.png",
+            "answer": "varus",
+            "display-answer": "Varus"
+        },
+        {
+            "id": 510,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VayneCondemn.png",
+            "answer": "vayne",
+            "display-answer": "Vayne"
+        },
+        {
+            "id": 511,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VayneInquisition.png",
+            "answer": "vayne",
+            "display-answer": "Vayne"
+        },
+        {
+            "id": 512,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VayneTumble.png",
+            "answer": "vayne",
+            "display-answer": "Vayne"
+        },
+        {
+            "id": 513,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VayneSilveredBolts.png",
+            "answer": "vayne",
+            "display-answer": "Vayne"
+        },
+        {
+            "id": 514,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VeigarBalefulStrike.png",
+            "answer": "veigar",
+            "display-answer": "Veigar"
+        },
+        {
+            "id": 515,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VeigarDarkMatter.png",
+            "answer": "veigar",
+            "display-answer": "Veigar"
+        },
+        {
+            "id": 516,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VeigarEventHorizon.png",
+            "answer": "veigar",
+            "display-answer": "Veigar"
+        },
+        {
+            "id": 517,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VeigarR.png",
+            "answer": "veigar",
+            "display-answer": "Veigar"
+        },
+        {
+            "id": 518,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VelkozE.png",
+            "answer": "velkoz",
+            "display-answer": "Velkoz"
+        },
+        {
+            "id": 519,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VelkozQ.png",
+            "answer": "velkoz",
+            "display-answer": "Velkoz"
+        },
+        {
+            "id": 520,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VelkozR.png",
+            "answer": "velkoz",
+            "display-answer": "Velkoz"
+        },
+        {
+            "id": 521,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VelkozW.png",
+            "answer": "velkoz",
+            "display-answer": "Velkoz"
+        },
+        {
+            "id": 522,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViE.png",
+            "answer": "vi",
+            "display-answer": "Vi"
+        },
+        {
+            "id": 523,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViQ.png",
+            "answer": "vi",
+            "display-answer": "Vi"
+        },
+        {
+            "id": 524,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViR.png",
+            "answer": "vi",
+            "display-answer": "Vi"
+        },
+        {
+            "id": 525,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViW.png",
+            "answer": "vi",
+            "display-answer": "Vi"
+        },
+        {
+            "id": 526,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViktorChaosStorm.png",
+            "answer": "viktor",
+            "display-answer": "Viktor"
+        },
+        {
+            "id": 527,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViktorDeathRay.png",
+            "answer": "viktor",
+            "display-answer": "Viktor"
+        },
+        {
+            "id": 528,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViktorGravitonField.png",
+            "answer": "viktor",
+            "display-answer": "Viktor"
+        },
+        {
+            "id": 529,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ViktorPowerTransfer.png",
+            "answer": "viktor",
+            "display-answer": "Viktor"
+        },
+        {
+            "id": 530,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VladimirE.png",
+            "answer": "vladimir",
+            "display-answer": "Vladimir"
+        },
+        {
+            "id": 531,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VladimirHemoplague.png",
+            "answer": "vladimir",
+            "display-answer": "Vladimir"
+        },
+        {
+            "id": 532,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VladimirQ.png",
+            "answer": "vladimir",
+            "display-answer": "Vladimir"
+        },
+        {
+            "id": 533,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VladimirSanguinePool.png",
+            "answer": "vladimir",
+            "display-answer": "Vladimir"
+        },
+        {
+            "id": 534,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VolibearE.png",
+            "answer": "volibear",
+            "display-answer": "Volibear"
+        },
+        {
+            "id": 535,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VolibearQ.png",
+            "answer": "volibear",
+            "display-answer": "Volibear"
+        },
+        {
+            "id": 536,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VolibearR.png",
+            "answer": "volibear",
+            "display-answer": "Volibear"
+        },
+        {
+            "id": 537,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VolibearW.png",
+            "answer": "volibear",
+            "display-answer": "Volibear"
+        },
+        {
+            "id": 538,
+            "question": "Which champion has this ability?",
+            "img": "imgs/Volley.png",
+            "answer": "ashe",
+            "display-answer": "Ashe"
+        },
+        {
+            "id": 539,
+            "question": "Which champion has this ability?",
+            "img": "imgs/VorpalSpikes.png",
+            "answer": "chogath",
+            "display-answer": "Cho'Gath"
+        },
+        {
+            "id": 540,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WarwickE.png",
+            "answer": "warwick",
+            "display-answer": "Warwick"
+        },
+        {
+            "id": 541,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WarwickQ.png",
+            "answer": "warwick",
+            "display-answer": "Warwick"
+        },
+        {
+            "id": 542,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WarwickR.png",
+            "answer": "warwick",
+            "display-answer": "Warwick"
+        },
+        {
+            "id": 543,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WarwickW.png",
+            "answer": "warwick",
+            "display-answer": "Warwick"
+        },
+        {
+            "id": 544,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WildCards.png",
+            "answer": "twistedfate",
+            "display-answer": "Twisted Fate"
+        },
+        {
+            "id": 545,
+            "question": "Which champion has this ability?",
+            "img": "imgs/WujuStyle.png",
+            "answer": "masteryi",
+            "display-answer": "Master Yi"
+        },
+        {
+            "id": 546,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XayahE.png",
+            "answer": "xayah",
+            "display-answer": "Xayah"
+        },
+        {
+            "id": 547,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XayahQ.png",
+            "answer": "xayah",
+            "display-answer": "Xayah"
+        },
+        {
+            "id": 548,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XayahR.png",
+            "answer": "xayah",
+            "display-answer": "Xayah"
+        },
+        {
+            "id": 549,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XayahW.png",
+            "answer": "xayah",
+            "display-answer": "Xayah"
+        },
+        {
+            "id": 550,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XerathArcaneBarrage2.png",
+            "answer": "xerath",
+            "display-answer": "Xerath"
+        },
+        {
+            "id": 551,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XerathArcanopulseChargeUp.png",
+            "answer": "xerath",
+            "display-answer": "Xerath"
+        },
+        {
+            "id": 552,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XerathLocusOfPower2.png",
+            "answer": "xerath",
+            "display-answer": "Xerath"
+        },
+        {
+            "id": 553,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XerathMageSpear.png",
+            "answer": "xerath",
+            "display-answer": "Xerath"
+        },
+        {
+            "id": 554,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XinZhaoE.png",
+            "answer": "xinzhao",
+            "display-answer": "Xin Zhao"
+        },
+        {
+            "id": 555,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XinZhaoQ.png",
+            "answer": "xinzhao",
+            "display-answer": "Xin Zhao"
+        },
+        {
+            "id": 556,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XinZhaoR.png",
+            "answer": "xinzhao",
+            "display-answer": "Xin Zhao"
+        },
+        {
+            "id": 557,
+            "question": "Which champion has this ability?",
+            "img": "imgs/XinZhaoW.png",
+            "answer": "xinzhao",
+            "display-answer": "Xin Zhao"
+        },
+        {
+            "id": 558,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YasuoE.png",
+            "answer": "yasuo",
+            "display-answer": "Yasuo"
+        },
+        {
+            "id": 559,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YasuoQ1Wrapper.png",
+            "answer": "yasuo",
+            "display-answer": "Yasuo"
+        },
+        {
+            "id": 560,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YasuoR.png",
+            "answer": "yasuo",
+            "display-answer": "Yasuo"
+        },
+        {
+            "id": 561,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YasuoW.png",
+            "answer": "yasuo",
+            "display-answer": "Yasuo"
+        },
+        {
+            "id": 562,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YorickE.png",
+            "answer": "yorick",
+            "display-answer": "Yorick"
+        },
+        {
+            "id": 563,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YorickQ.png",
+            "answer": "yorick",
+            "display-answer": "Yorick"
+        },
+        {
+            "id": 564,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YorickR.png",
+            "answer": "yorick",
+            "display-answer": "Yorick"
+        },
+        {
+            "id": 565,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YorickW.png",
+            "answer": "yorick",
+            "display-answer": "Yorick"
+        },
+        {
+            "id": 566,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YuumiE.png",
+            "answer": "yuumi",
+            "display-answer": "Yuumi"
+        },
+        {
+            "id": 567,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YuumiQ.png",
+            "answer": "yuumi",
+            "display-answer": "Yuumi"
+        },
+        {
+            "id": 568,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YuumiR.png",
+            "answer": "yuumi",
+            "display-answer": "Yuumi"
+        },
+        {
+            "id": 569,
+            "question": "Which champion has this ability?",
+            "img": "imgs/YuumiW.png",
+            "answer": "yuumi",
+            "display-answer": "Yuumi"
+        },
+        {
+            "id": 570,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZacE.png",
+            "answer": "zac",
+            "display-answer": "Zac"
+        },
+        {
+            "id": 571,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZacQ.png",
+            "answer": "zac",
+            "display-answer": "Zac"
+        },
+        {
+            "id": 572,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZacR.png",
+            "answer": "zac",
+            "display-answer": "Zac"
+        },
+        {
+            "id": 573,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZacW.png",
+            "answer": "zac",
+            "display-answer": "Zac"
+        },
+        {
+            "id": 574,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZedE.png",
+            "answer": "zed",
+            "display-answer": "Zed"
+        },
+        {
+            "id": 575,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZedQ.png",
+            "answer": "zed",
+            "display-answer": "Zed"
+        },
+        {
+            "id": 576,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZedR.png",
+            "answer": "zed",
+            "display-answer": "Zed"
+        },
+        {
+            "id": 577,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZedW.png",
+            "answer": "zed",
+            "display-answer": "Zed"
+        },
+        {
+            "id": 578,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZiggsE.png",
+            "answer": "ziggs",
+            "display-answer": "Ziggs"
+        },
+        {
+            "id": 579,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZiggsQ.png",
+            "answer": "ziggs",
+            "display-answer": "Ziggs"
+        },
+        {
+            "id": 580,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZiggsR.png",
+            "answer": "ziggs",
+            "display-answer": "Ziggs"
+        },
+        {
+            "id": 581,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZiggsW.png",
+            "answer": "ziggs",
+            "display-answer": "Ziggs"
+        },
+        {
+            "id": 582,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZileanQ.png",
+            "answer": "zilean",
+            "display-answer": "Zilean"
+        },
+        {
+            "id": 583,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZileanW.png",
+            "answer": "zilean",
+            "display-answer": "Zilean"
+        },
+        {
+            "id": 584,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZoeE.png",
+            "answer": "zoe",
+            "display-answer": "Zoe"
+        },
+        {
+            "id": 585,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZoeQ.png",
+            "answer": "zoe",
+            "display-answer": "Zoe"
+        },
+        {
+            "id": 586,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZoeR.png",
+            "answer": "zoe",
+            "display-answer": "Zoe"
+        },
+        {
+            "id": 587,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZoeW.png",
+            "answer": "zoe",
+            "display-answer": "Zoe"
+        },
+        {
+            "id": 588,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZyraE.png",
+            "answer": "zyra",
+            "display-answer": "Zyra"
+        },
+        {
+            "id": 589,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZyraQ.png",
+            "answer": "zyra",
+            "display-answer": "Zyra"
+        },
+        {
+            "id": 590,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZyraR.png",
+            "answer": "zyra",
+            "display-answer": "Zyra"
+        },
+        {
+            "id": 591,
+            "question": "Which champion has this ability?",
+            "img": "imgs/ZyraW.png",
+            "answer": "zyra",
+            "display-answer": "Zyra"
         }
     ]
 }
