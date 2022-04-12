@@ -1,6 +1,3 @@
-const gameBgMusic = document.getElementById('game-bg');
-gameBgMusic.play();
-
 // toggle chat
 const toggleChat = () => {
     if (document.querySelector('.chat').style.display === "none") {
@@ -269,10 +266,6 @@ const gameRun = async () => {
         point = initialPoint;
         turns--;
     }
-
-    // Stop game background music
-    // document.getElementById("game-bg").pause();
-    gameBgMusic.pause();
 
     // Decide and show the winner to the UI
     const players = document.getElementsByClassName('player');

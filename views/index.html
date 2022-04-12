@@ -15,26 +15,16 @@
         </form>
     </div>
 
-    <!--<audio id="bg-music" controls loop>
-        <source src="audio/bg-music" type="audio/mpeg">
-        Music source: https://www.bensound.com
-    </audio>-->
     <embed src="/audio/bg-music.mp3" loop="true" autostart="true" width="2" height="0">
     <script>
-        /*
-        const bgMusic = document.getElementById("bg-music");
-        bgMusic.play();
-        */
 
         const submitName = () => {
-            // e.preventDefault();
             const name = document.querySelector('.name-input').value;
             window.localStorage.setItem('leaguetrivial-name', name);
             window.location.href = "/prep";
         }
         document.body.addEventListener("keyup", event => {
             event.preventDefault();
-            // console.log(event.keyCode);
             if (event.keyCode === 13) {
                 console.log("this is trigger");
                 submitName();
