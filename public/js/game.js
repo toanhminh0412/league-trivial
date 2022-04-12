@@ -256,7 +256,7 @@ const gameRun = async () => {
         clearInterval(interval);
     }
 
-    let turns = 20;
+    let turns = 10;
     while(turns !== 0) {
         const role = window.localStorage.getItem("role");
         if (role === "room-owner") {
