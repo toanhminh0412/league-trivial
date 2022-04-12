@@ -162,6 +162,12 @@ const gameRun = async () => {
         curQuestionObj = questionObj;
         document.getElementById('question-img').src = questionObj.img;
         document.getElementById('question').innerText = questionObj.question;
+        let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+        yourPlayerDiv.style.borderColor = "#ffffff";
+        let playerDivs = document.getElementsByClassName('player');
+        for (let i = 0; i < playerDivs.length; i++) {
+            playerDivs[i].style.borderColor = "#ffffff";
+        }
     })
 
     // Wrong answer from players
