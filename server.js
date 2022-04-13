@@ -6,6 +6,7 @@ const io = require('socket.io')(lobbyServer, { cors: { origin: "*" }})
 const spellQuestions = require('./questions/spells.json').spellQuestions;
 let socketIdName = {};
 const PORT = process.env.PORT || 3001;
+let gameObject = {gameMode: "points", time: 10, lives: -1, turns: 10};
 
 // Player list for the lobby
 let lobbyPlayerList = [];
@@ -16,7 +17,7 @@ let gamePlayerList = [];
 app.use(express.static('public'))
 
 // Lobby for players before joining the game
-app.get('/prep', (req, res) => {
+app.get('/lobby', (req, res) => {
     res.sendFile(path.join(__dirname,'views/lobby.html'));
 })
 
@@ -41,6 +42,15 @@ lobbyServer.listen(PORT, () => {
 
 io.on("connection", (socket) => {
 
+    // Check name of new player
+    socket.on("name-submit", name => {
+        if (lobbyPlayerList.includes(name) || gamePlayerList.includes(name)) {
+            socket.emit("name-error");
+        } else {
+            socket.emit("name-success")
+        }
+    })
+
     // Signal received when a new player joins
     socket.on('lobby-new-player', (name) => {
         if (!lobbyPlayerList.includes(name)) {
@@ -49,6 +59,11 @@ io.on("connection", (socket) => {
         socketIdName[socket.id] = name;
         console.log(socketIdName);
         io.emit('lobby-players', lobbyPlayerList);
+    })
+
+    // Receive setting wanted by players
+    socket.on('game-setting', obj => {
+        gameObject = obj;
     })
 
     // Signal received when an owner of a lobby start a game
@@ -83,7 +98,8 @@ io.on("connection", (socket) => {
     })
 
     socket.on("game-game-start", () => {
-        io.emit("game-game-start");
+        console.log("Game start: ", gameObject);
+        io.emit("game-game-start", gameObject);
     })
 
     socket.on("game-chat", msgObj => {

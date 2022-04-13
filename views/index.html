@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League Trivial</title>
-    <link rel="stylesheet" type="text/css" href="styles/welcome.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
     <div class="game-container">
         <form class="ingame-info" onsubmit="submitName()">
+            <p id="name-error"></p>
             <input class="name-input" type='text' placeholder="Username">
             <div onclick="submitName()" class="submit-btn">Submit</div>
         </form>
     </div>
-
-    <embed src="/audio/bg-music.mp3" loop="true" autostart="true" width="2" height="0">
     <script>
+        const socket = io();
+        socket.on("name-success", () => {
+            window.location.href = "/lobby";
+        })
+
+        socket.on("name-error", () => {
+            document.getElementById("name-error").innerText = "Name already existed in the lobby. Please pick another name."
+        })
 
         const submitName = () => {
             const name = document.querySelector('.name-input').value;
             window.localStorage.setItem('leaguetrivial-name', name);
-            window.location.href = "/prep";
+            socket.emit("name-submit", name);
         }
         document.body.addEventListener("keyup", event => {
             event.preventDefault();

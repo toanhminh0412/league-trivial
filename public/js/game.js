@@ -1,3 +1,6 @@
+// Data for sudden death
+let suddenDeathPlayers = {};
+
 // toggle chat
 const toggleChat = () => {
     if (document.querySelector('.chat').style.display === "none") {
@@ -34,6 +37,7 @@ socket.on("game-players", players => {
     document.querySelector('.player-container').innerHTML = "";
 
     for (let i = 0; i < players.length; i++) {
+        suddenDeathPlayers[players[i]] = 0;
         if (players[i] === ingameName) {
             // Construct containers for players
             let playerDiv = document.createElement("div");
@@ -84,6 +88,7 @@ socket.on("game-players", players => {
 socket.on('game-new-player', player => {
     // console.log('New player: ', player);
     // Construct new container for the new player
+    suddenDeathPlayers[player] = 0;
     let playerDiv = document.createElement("div");
     let playerNameP = document.createElement("p");
     let playerName = document.createTextNode(`${player}: 0`);
@@ -129,177 +134,362 @@ socket.on("game-chat", msgObj => {
 })
 
 // Game happens in this function
-const gameRun = async () => {
-    let curQuestionObj = {}
-    const playerList = document.getElementsByClassName('player');
-    let initialPoint = (playerList.length+1) * 10;
-    let point = initialPoint;
+const gameRun = async (gameMode, resTime, gameLives, gameTurns) => {
+    if (gameMode === "points") {
+        let curQuestionObj = {}
+        const playerList = document.getElementsByClassName('player');
+        let initialPoint = (playerList.length+1) * 10;
+        let point = initialPoint;
 
-    // Allow players to type in answer
-    $("#answer").on('keyup', function (e) {
-        if (e.key === 'Enter' || e.keyCode === 13) {
-            let answer = document.querySelector('#answer').value;
-            answer = answer.replace(/\s/g, '').toLowerCase();
-            if (answer !== "") {
-                if (answer !== curQuestionObj.answer) {
-                    socket.emit("game-wrong-answer", {name: ingameName, answer: answer});
-                    document.querySelector('#answer').value = "";
+        // Allow players to type in answer
+        $("#answer").on('keyup', function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                let answer = document.querySelector('#answer').value;
+                answer = answer.replace(/\s/g, '').toLowerCase();
+                if (answer !== "") {
+                    if (answer !== curQuestionObj.answer) {
+                        socket.emit("game-wrong-answer", {name: ingameName, answer: answer});
+                        document.querySelector('#answer').value = "";
+                    } else {
+                        document.querySelector('#answer').disabled = true;
+                        socket.emit("game-right-answer", {name: ingameName, answer: answer, point: point});
+                        document.querySelector('#answer').value = "";
+                    }
+                }
+            }
+        });
+
+        // Receive questions from server
+        socket.on("game-question", questionObj => {
+            console.log(questionObj);
+            curQuestionObj = questionObj;
+            document.getElementById('question-img').src = questionObj.img;
+            document.getElementById('question').innerText = questionObj.question;
+            let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+            yourPlayerDiv.style.borderColor = "#ffffff";
+            let playerDivs = document.getElementsByClassName('player');
+            for (let i = 0; i < playerDivs.length; i++) {
+                playerDivs[i].style.borderColor = "#ffffff";
+            }
+        })
+
+        // Wrong answer from players
+        socket.on("game-wrong-answer", answerObj => {
+            let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+            let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
+            if (yourPlayerName === answerObj.name) {
+                yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = answerObj.answer;
+            } else {
+                let playerDivs = document.getElementsByClassName('player');
+                for (let i = 0; i < playerDivs.length; i++) {
+                    if (playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(":")[0] === answerObj.name) {
+                        playerDivs[i].getElementsByTagName('p')[1].innerHTML = answerObj.answer;
+                        break;
+                    }
+                }
+            }
+        })
+
+        // Right answer from players
+        socket.on("game-right-answer", answerObj => {
+            let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+            let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
+            if (yourPlayerName === answerObj.name) {
+                yourPlayerDiv.style.borderColor = "#009e12";
+                let yourPlayerPoint = parseInt(yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(": ")[1]);
+                console.log("yourPlayerPoint: ", yourPlayerPoint);
+                yourPlayerDiv.getElementsByTagName('p')[0].innerHTML = `${ingameName}: ${yourPlayerPoint + answerObj.point}`
+                yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = "";
+            } else {
+                let playerDivs = document.getElementsByClassName('player');
+                for (let i = 0; i < playerDivs.length; i++) {
+                    if (playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(":")[0] === answerObj.name) {
+                        playerDivs[i].style.borderColor = "#009e12";
+                        let playerPoint = parseInt(playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(": ")[1]);
+                        console.log("playerPoint: ", playerPoint);
+                        playerDivs[i].getElementsByTagName('p')[0].innerHTML = `${answerObj.name}: ${playerPoint + answerObj.point}`
+                        playerDivs[i].getElementsByTagName('p')[1].innerHTML = "";
+                        point = point - 10;
+                        break;
+                    }
+                }
+            }
+            const rightMusic = document.getElementById('right-music');
+            rightMusic.play();
+        })
+
+        // Utility function to delay a certain amount of time before executing the next line
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        // time interval that players are allowed to write answer
+        const answerTimer = async () => {
+            document.querySelector("#answer").disabled = false;
+            let seconds = resTime;
+            const timerElement = document.querySelector('.timer');
+            interval = setInterval(() => {
+                timerElement.innerHTML = seconds;
+                seconds--;
+                // console.log("seconds in answerTimer:", seconds);
+                /*
+                if (seconds === -1) {
+                    clearInterval(interval);
+                    return;
+                }  
+                */
+            }, 1000); 
+            await delay((resTime+1) * 1000);
+            clearInterval(interval);
+        }
+
+        // time interval that correct answer is shown
+        const resultTimer = async () => {
+            document.querySelector("#answer").disabled = true;
+            document.querySelector("#question").innerText = `Answer: ${curQuestionObj["display-answer"]}`;
+            let seconds = 5;
+            interval = setInterval(() => {
+                seconds--;
+                // console.log("seconds in resultTimer:", seconds);
+                /*
+                if (seconds === -1) {
+                    clearInterval(interval);
+                    return;
+                }*/  
+            }, 1000); 
+            await delay(6000);
+            clearInterval(interval);
+        }
+
+        let turns = gameTurns;
+        while(turns !== 0) {
+            const role = window.localStorage.getItem("role");
+            if (role === "room-owner") {
+                // get question from the server
+                socket.emit("game-get-question");
+            }
+            
+            await answerTimer(); 
+            await resultTimer();
+            point = initialPoint;
+            turns--;
+        }
+
+        // Decide and show the winner to the UI
+        const players = document.getElementsByClassName('player');
+        const yourPlayer = document.getElementsByClassName('your-player')[0];
+        let winner = yourPlayer.getElementsByTagName('p')[0].innerHTML.split(": ");
+        let winnerName = winner[0];
+        let winnerPoint = parseInt(winner[1]);
+
+        for (let i = 0; i < players.length; i++) {
+            const player = players[i];
+            const playerInfo = player.getElementsByTagName('p')[0].innerHTML.split(': ');
+            const playerName = playerInfo[0];
+            const playerPoint = parseInt(playerInfo[1]);
+            if (playerPoint > winnerPoint) {
+                winnerName = playerName;
+                winnerPoint = playerPoint;
+            }
+        }
+
+        document.getElementById('question-img').src = "imgs/victory.png";
+        document.getElementById('question').innerText = `Winner: ${winnerName}`;
+        document.getElementById('answer').style.display = "none";
+        document.getElementsByClassName('lobby-btn')[0].style.display = "flex";
+        document.getElementById("win-music").play();
+    } 
+    // Sudden death mode
+    else {
+        let correctAnswer = {};
+
+        // Set all players' lives to the set lives
+        const playerNamePs = document.getElementsByClassName("player-name");
+        for(let i = 0; i < playerNamePs.length; i++) {
+            const playerName = playerNamePs[i].innerText.split(": ")[0];
+            playerNamePs[i].innerText = `${playerName}`;
+        }
+
+        const answerPs = document.getElementsByClassName("player-answer");
+        for(let i = 0; i < answerPs.length; i++) {
+            answerPs[i].innerText = `Lives: ${gameLives}`;
+        }
+
+        for (const name in suddenDeathPlayers) {
+            suddenDeathPlayers[name] = gameLives;
+            correctAnswer[name] = false;
+        }
+
+        let curQuestionObj = {}
+
+        // Receive questions from server
+        socket.on("game-question", questionObj => {
+            console.log(questionObj);
+            curQuestionObj = questionObj;
+            document.getElementById('question-img').src = questionObj.img;
+            document.getElementById('question').innerText = questionObj.question;
+            let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+            yourPlayerDiv.style.borderColor = "#ffffff";
+            let playerDivs = document.getElementsByClassName('player');
+            for (let i = 0; i < playerDivs.length; i++) {
+                playerDivs[i].style.borderColor = "#ffffff";
+            }
+        })
+
+        // Allow players to type in answer
+        $("#answer").on('keyup', function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                let answer = document.querySelector('#answer').value;
+                answer = answer.replace(/\s/g, '').toLowerCase();
+                if (answer !== "") {
+                    if (answer !== curQuestionObj.answer) {
+                        socket.emit("game-chat", {name: ingameName, msg: answer});
+                        socket.emit("game-wrong-answer", {name: ingameName, answer: answer})
+                        document.querySelector('#answer').value = "";
+                    } else {
+                        document.querySelector('#answer').disabled = true;
+                        socket.emit("game-right-answer", {name: ingameName, answer: answer});
+                        document.querySelector('#answer').value = "";
+                    }
+                }
+            }
+        });
+
+        // Wrong answer from players
+        socket.on("game-wrong-answer", answerObj => {
+            
+        })
+
+        // Right answer from players
+        socket.on("game-right-answer", answerObj => {
+            let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+            let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML;
+            if (yourPlayerName === answerObj.name) {
+                yourPlayerDiv.style.borderColor = "#009e12";
+                correctAnswer[yourPlayerName] = true;
+            } else {
+                let playerDivs = document.getElementsByClassName('player');
+                for (let i = 0; i < playerDivs.length; i++) {
+                    const playerName = playerDivs[i].getElementsByTagName('p')[0].innerHTML
+                    if (playerName === answerObj.name) {
+                        playerDivs[i].style.borderColor = "#009e12";
+                        correctAnswer[playerName] = true;
+                        break;
+                    }
+                }
+            }
+            const rightMusic = document.getElementById('right-music');
+            rightMusic.play();
+        })
+
+        // Utility function to delay a certain amount of time before executing the next line
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        // time interval that players are allowed to write answer
+        const answerTimer = async () => {
+            document.querySelector("#answer").disabled = false;
+            let seconds = resTime;
+            const timerElement = document.querySelector('.timer');
+            interval = setInterval(() => {
+                timerElement.innerHTML = seconds;
+                seconds--;
+                // console.log("seconds in answerTimer:", seconds);
+                /*
+                if (seconds === -1) {
+                    clearInterval(interval);
+                    return;
+                }  
+                */
+            }, 1000); 
+            await delay((resTime+1) * 1000);
+            clearInterval(interval);
+        }
+
+        // time interval that correct answer is shown
+        const resultTimer = async () => {
+            document.querySelector("#answer").disabled = true;
+            document.querySelector("#question").innerText = `Answer: ${curQuestionObj["display-answer"]}`;
+            let seconds = 5;
+            interval = setInterval(() => {
+                seconds--;
+                // console.log("seconds in resultTimer:", seconds);
+                /*
+                if (seconds === -1) {
+                    clearInterval(interval);
+                    return;
+                }*/  
+            }, 1000); 
+            await delay(6000);
+            clearInterval(interval);
+        }
+
+        // Game loop
+        while (Object.keys(suddenDeathPlayers).length !== 1) {
+            console.log(suddenDeathPlayers);
+            const role = window.localStorage.getItem("role");
+            if (role === "room-owner") {
+                // get question from the server
+                socket.emit("game-get-question");
+            }
+            await answerTimer(); 
+            await resultTimer();
+            for (const name in correctAnswer) {
+                if (!correctAnswer[name]) {
+                    let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
+                    let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
+                    if (yourPlayerName === name) {
+                        suddenDeathPlayers[yourPlayerName]--;
+                        if(suddenDeathPlayers[yourPlayerName] === 0) {
+                            yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = `Lives: 0`;
+                            delete suddenDeathPlayers[yourPlayerName];
+                        } else {
+                            yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = `Lives: ${suddenDeathPlayers[yourPlayerName]}`;
+                        }
+                    } else {
+                        let playerDivs = document.getElementsByClassName('player');
+                        for (let i = 0; i < playerDivs.length; i++) {
+                            const playerName = playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(":")[0];
+                            if (playerName === name) {
+                                suddenDeathPlayers[playerName]--;
+                                if(suddenDeathPlayers[playerName] === 0) {
+                                    playerDivs[i].getElementsByTagName('p')[1].innerHTML = `Lives: 0`;
+                                    delete suddenDeathPlayers[playerName];
+                                } else {
+                                    playerDivs[i].getElementsByTagName('p')[1].innerHTML = `Lives: ${suddenDeathPlayers[playerName]}`;
+                                }
+                                break;
+                            }
+                        }
+                    }
                 } else {
-                    document.querySelector('#answer').disabled = true;
-                    socket.emit("game-right-answer", {name: ingameName, answer: answer, point: point});
-                    document.querySelector('#answer').value = "";
+                    correctAnswer[name] = false;
                 }
             }
-        }
-    });
+        } 
 
-    // Receive questions from server
-    socket.on("game-question", questionObj => {
-        console.log(questionObj);
-        curQuestionObj = questionObj;
-        document.getElementById('question-img').src = questionObj.img;
-        document.getElementById('question').innerText = questionObj.question;
-        let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
-        yourPlayerDiv.style.borderColor = "#ffffff";
-        let playerDivs = document.getElementsByClassName('player');
-        for (let i = 0; i < playerDivs.length; i++) {
-            playerDivs[i].style.borderColor = "#ffffff";
-        }
-    })
-
-    // Wrong answer from players
-    socket.on("game-wrong-answer", answerObj => {
-        let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
-        let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
-        if (yourPlayerName === answerObj.name) {
-            yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = answerObj.answer;
-        } else {
-            let playerDivs = document.getElementsByClassName('player');
-            for (let i = 0; i < playerDivs.length; i++) {
-                if (playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(":")[0] === answerObj.name) {
-                    playerDivs[i].getElementsByTagName('p')[1].innerHTML = answerObj.answer;
-                    break;
-                }
+        // Decide and show the winner to the UI
+        let winner = "";
+        for (const name in suddenDeathPlayers) {
+            if (suddenDeathPlayers[name] > 0) {
+                winner = name;
             }
         }
-    })
 
-    // Right answer from players
-    socket.on("game-right-answer", answerObj => {
-        let yourPlayerDiv = document.getElementsByClassName('your-player')[0];
-        let yourPlayerName = yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(":")[0];
-        if (yourPlayerName === answerObj.name) {
-            yourPlayerDiv.style.borderColor = "#009e12";
-            let yourPlayerPoint = parseInt(yourPlayerDiv.getElementsByTagName('p')[0].innerHTML.split(": ")[1]);
-            console.log("yourPlayerPoint: ", yourPlayerPoint);
-            yourPlayerDiv.getElementsByTagName('p')[0].innerHTML = `${ingameName}: ${yourPlayerPoint + answerObj.point}`
-            yourPlayerDiv.getElementsByTagName('p')[1].innerHTML = "";
-        } else {
-            let playerDivs = document.getElementsByClassName('player');
-            for (let i = 0; i < playerDivs.length; i++) {
-                if (playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(":")[0] === answerObj.name) {
-                    playerDivs[i].style.borderColor = "#009e12";
-                    let playerPoint = parseInt(playerDivs[i].getElementsByTagName('p')[0].innerHTML.split(": ")[1]);
-                    console.log("playerPoint: ", playerPoint);
-                    playerDivs[i].getElementsByTagName('p')[0].innerHTML = `${answerObj.name}: ${playerPoint + answerObj.point}`
-                    playerDivs[i].getElementsByTagName('p')[1].innerHTML = "";
-                    point = point - 10;
-                    break;
-                }
-            }
-        }
-        const rightMusic = document.getElementById('right-music');
-        rightMusic.play();
-    })
+        document.getElementById('question-img').src = "imgs/victory.png";
+        document.getElementById('question').innerText = `Winner: ${winner}`;
+        document.getElementById('answer').style.display = "none";
+        document.getElementsByClassName('lobby-btn')[0].style.display = "flex";
+        document.getElementById("win-music").play();
 
-    // Utility function to delay a certain amount of time before executing the next line
-    const delay = ms => new Promise(res => setTimeout(res, ms));
-
-    // time interval that players are allowed to write answer
-    const answerTimer = async () => {
-        document.querySelector("#answer").disabled = false;
-        let seconds = 10;
-        const timerElement = document.querySelector('.timer');
-        interval = setInterval(() => {
-            timerElement.innerHTML = seconds;
-            seconds--;
-            // console.log("seconds in answerTimer:", seconds);
-            /*
-            if (seconds === -1) {
-                clearInterval(interval);
-                return;
-            }  
-            */
-        }, 1000); 
-        await delay(11000);
-        clearInterval(interval);
     }
-
-    // time interval that correct answer is shown
-    const resultTimer = async () => {
-        document.querySelector("#answer").disabled = true;
-        document.querySelector("#question").innerText = `Answer: ${curQuestionObj["display-answer"]}`;
-        let seconds = 5;
-        interval = setInterval(() => {
-            seconds--;
-            // console.log("seconds in resultTimer:", seconds);
-            /*
-            if (seconds === -1) {
-                clearInterval(interval);
-                return;
-            }*/  
-        }, 1000); 
-        await delay(6000);
-        clearInterval(interval);
-    }
-
-    let turns = 10;
-    while(turns !== 0) {
-        const role = window.localStorage.getItem("role");
-        if (role === "room-owner") {
-            // get question from the server
-            socket.emit("game-get-question");
-        }
-        
-        await answerTimer(); 
-        await resultTimer();
-        point = initialPoint;
-        turns--;
-    }
-
-    // Decide and show the winner to the UI
-    const players = document.getElementsByClassName('player');
-    const yourPlayer = document.getElementsByClassName('your-player')[0];
-    let winner = yourPlayer.getElementsByTagName('p')[0].innerHTML.split(": ");
-    let winnerName = winner[0];
-    let winnerPoint = parseInt(winner[1]);
-
-    for (let i = 0; i < players.length; i++) {
-        const player = players[i];
-        const playerInfo = player.getElementsByTagName('p')[0].innerHTML.split(': ');
-        const playerName = playerInfo[0];
-        const playerPoint = parseInt(playerInfo[1]);
-        if (playerPoint > winnerPoint) {
-            winnerName = playerName;
-            winnerPoint = playerPoint;
-        }
-    }
-
-    document.getElementById('question-img').src = "imgs/victory.png";
-    document.getElementById('question').innerText = `Winner: ${winnerName}`;
-    document.getElementById('answer').style.display = "none";
-    document.getElementsByClassName('lobby-btn')[0].style.display = "flex";
-    document.getElementById("win-music").play();
 }
 
 // Room owner starts a game 
-socket.on("game-game-start", () => {
+socket.on("game-game-start", gameObj => {
     document.querySelector("#question-img").style.display = "block";
     document.querySelector("#question-img").style.marginLeft = "auto";
     document.querySelector("#question-img").style.marginRight = "auto";
     document.querySelector('.start-btn').style.display = "none";
     document.querySelector("#answer").style.display = "block";
-    gameRun();
+    gameRun(gameObj.gameMode, gameObj.time, gameObj.lives, gameObj.turns);
 })
 
 // Start a game by clicking on start button
@@ -310,5 +500,5 @@ if (window.localStorage.getItem("role") === "room-owner") {
 }
 
 document.querySelector('.lobby-btn').addEventListener("click", () => {
-    window.location.href = "/prep";
+    window.location.href = "/lobby";
 })

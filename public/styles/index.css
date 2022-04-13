@@ -7,86 +7,90 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
 }
 
-body {
-    background-color: black;
-    height: 100vh;
+.game-container {
     width: 100vw;
-}
-
-.title {
-    color: #fff;
-    padding-top: 20px;
-    padding-left: 10px;
-    text-transform: uppercase;
-    font-size: 200%;
-    font-weight: 500;
-}
-
-.players-container {
-    margin-top: 50px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.player-container {
-    color: #fff;
-    font-size: 150%;
-    text-align: center;
+    height: 100vh;
+    background-color: #18335e;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #0054c2;
+}
+
+#name-error {
+    color: #ff3333;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
     margin-bottom: 20px;
 }
 
-.start-btn {
-    width: 200px;
-    height: 50px;
-    font-size: 150%;
-    border-radius: 5px;
-    background-color: #ff0000;
-    color: #fff;
+.ingame-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     text-align: center;
+}
+
+.ingame-info .name-input {
+    padding: 3px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #d9ff00;
+    height: 50px;
+}
+
+.ingame-info .submit-btn {
+    width: 120px;
+    height: 40px;
+    padding: 3px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ff0000;
+    text-align: center;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: default;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 30px;
+    transition-duration: 0.2s;
 }
 
-.start-btn:hover {
+.ingame-info .submit-btn:hover {
     box-shadow: inset 0 0 10px #000000;
     background-color: #a60000;
 }
 
-.player-container:first-child {
-    color: #ebd700;
+@media only screen and (min-width: 414px) {
+    .ingame-info {
+        width: 75%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
-    .players-container {
-        width: 75%;
+    .ingame-info {
+        width: 50%;
     }
 
-    .player-container {
+    .ingame-info .name-input {
         height: 60px;
+        font-size: 30px;
+    }
+
+    .ingame-info .submit-btn {
+        height: 50px;
+        font-size: 30px;
+        width: 150px;
     }
 }
 
 @media only screen and (min-width: 1400px) {
-    .players-container {
-        width: 50%;
+    .ingame-info {
+        width: 30%;
     }
 }

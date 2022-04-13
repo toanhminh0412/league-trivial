@@ -1,10 +1,57 @@
 const socket = io();
 socket.on("connection");
 
+// Open/close setting
+document.getElementById('setting').addEventListener('click', () => {
+    document.getElementById('setting-lightbox').style.display = 'flex';
+});
+
+document.getElementById('close-btn').addEventListener('click', () => {
+    document.getElementById('setting-lightbox').style.display = 'none';
+})
+
+document.getElementById('game-mode').onchange = event => {
+    if (event.target.value === "sudden-death") {
+        document.getElementById("lives-label").style.display = "block";
+        document.getElementById("lives").style.display = "block";
+        document.getElementById("turns-label").style.display = "none";
+        document.getElementById("turns").style.display = "none";
+    } else {
+        document.getElementById("lives-label").style.display = "none";
+        document.getElementById("lives").style.display = "none";
+        document.getElementById("turns-label").style.display = "block";
+        document.getElementById("turns").style.display = "block";
+    }
+}
+
+document.getElementById("setting-form").onsubmit = event => {
+    event.preventDefault();
+    const gameMode = document.getElementById("game-mode").value;
+    if (gameMode === "sudden-death") {
+        const gameObject = {
+            gameMode: "sudden-death",
+            time: parseInt(document.getElementById("time").value),
+            lives: parseInt(document.getElementById("lives").value),
+            turns: -1
+        }
+        socket.emit("game-setting", gameObject);
+    } else {
+        const gameObject = {
+            gameMode: "points",
+            time: parseInt(document.getElementById("time").value),
+            lives: -1,
+            turns: parseInt(document.getElementById("turns").value)
+        }
+        socket.emit("game-setting", gameObject);
+    } 
+    document.getElementById("setting-lightbox").style.display = "none";
+}
+
 const ingameName = window.localStorage.getItem('leaguetrivial-name');
 
 // First time player receives names of all current players
 socket.on('lobby-players', players => {
+    window.localStorage.setItem("role", "");
     console.log("Player list: ", players);
 
     document.querySelector('.players-container').innerHTML = "";
@@ -32,6 +79,9 @@ socket.on('lobby-players', players => {
 
         // Make the player room onwer
         window.localStorage.setItem("role", "room-owner");
+
+        // Allow the room owner to have access to setting
+        document.getElementById("setting").style.display = "flex";
     }
     
     // Create a container for other players' characters

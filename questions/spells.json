@@ -2019,28 +2019,28 @@
         {
             "id": 286,
             "question": "Which champion has this ability?",
-            "img": "imgs/MonkeyKindDecoy.png",
+            "img": "imgs/MonkeyKingDecoy.png",
             "answer": "wukong",
             "display-answer": "Wukong"
         },
         {
             "id": 287,
             "question": "Which champion has this ability?",
-            "img": "imgs/MonkeyKindDoubleAttack.png",
+            "img": "imgs/MonkeyKingDoubleAttack.png",
             "answer": "wukong",
             "display-answer": "Wukong"
         },
         {
             "id": 288,
             "question": "Which champion has this ability?",
-            "img": "imgs/MonkeyKindNimbus.png",
+            "img": "imgs/MonkeyKingNimbus.png",
             "answer": "wukong",
             "display-answer": "Wukong"
         },
         {
             "id": 289,
             "question": "Which champion has this ability?",
-            "img": "imgs/MonkeyKindSpinToWin.png",
+            "img": "imgs/MonkeyKingSpinToWin.png",
             "answer": "wukong",
             "display-answer": "Wukong"
         },
@@ -2328,29 +2328,29 @@
             "id": 330,
             "question": "Which champion has this ability?",
             "img": "imgs/OrianaDetonateCommand.png",
-            "answer": "oriana",
-            "display-answer": "Oriana"
+            "answer": "orianna",
+            "display-answer": "Orianna"
         },
         {
             "id": 331,
             "question": "Which champion has this ability?",
             "img": "imgs/OrianaDissonanceCommand.png",
-            "answer": "oriana",
-            "display-answer": "Oriana"
+            "answer": "orianna",
+            "display-answer": "Orianna"
         },
         {
             "id": 332,
             "question": "Which champion has this ability?",
             "img": "imgs/OrianaIzunaCommand.png",
-            "answer": "oriana",
-            "display-answer": "Oriana"
+            "answer": "orianna",
+            "display-answer": "Orianna"
         },
         {
             "id": 333,
             "question": "Which champion has this ability?",
             "img": "imgs/OrianaRedactCommand.png",
-            "answer": "oriana",
-            "display-answer": "Oriana"
+            "answer": "orianna",
+            "display-answer": "Orianna"
         },
         {
             "id": 334,
